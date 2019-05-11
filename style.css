@@ -1,6 +1,6 @@
 /*-------- Global --------*/
 @font-face {
-	src: url(CircularStd-Medium.ttf);
+	src: url(assets/fonts/CircularStd-Medium.ttf);
 	font-family: CircularStd;
 }
 
@@ -26,7 +26,7 @@ html {
 body {
 	width: 60%;
 	margin: auto;
-	background-image: url(static/BG.png);
+	background-image: url(assets/images/BG.png);
 	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -201,7 +201,7 @@ ul {
 
 /*-------- Footer --------*/
 .footer {
-	background-image: url(static/Github_Blue_Large.png);
+	background-image: url(assets/images/Github_Blue_Large.png);
 	background-repeat: no-repeat;
 	background-position: right top;
 	background-size: 320px;
