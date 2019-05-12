@@ -219,3 +219,38 @@ ul {
 	margin: 5px auto 0 auto;
 	background-color: #027bff;
 }
+
+/*-------- Media Responsive --------*/
+
+/* 
+	##Device = Low Resolution Tablets, Mobiles (Landscape)
+	##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+	body {
+		width: 100%;
+	}
+}
+
+/* 
+	##Device = Most of the Smartphones Mobiles (Portrait)
+	##Screen = B/w 320px to 490px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+	* {
+		padding: 1px;
+	}
+	body {
+		width: 146%;
+	}
+	.skills p {
+		margin-bottom: 50em;
+	}
+	.scroll {
+	}
+	.navIcons a {
+		margin-left: 20px;
+	}
+}
