@@ -47,7 +47,7 @@ h2 {
 h5 {
 	font-size: 20px;
 	margin-top: 10px;
-	color: #17191a;
+	color: unset;
 }
 p {
 	color: #8f9ea5;
@@ -62,7 +62,6 @@ p {
 	align-items: center;
 	height: 100px;
 }
-.contactMe,
 .navIcons {
 	flex: 1;
 }
@@ -75,8 +74,18 @@ p {
 	display: inline-block;
 	vertical-align: middle;
 }
+.navIcons a,
+.contactMe a:hover,
+.contactMe img:hover {
+	color: #17191a;
+}
 .navIcons a {
 	margin-left: 40px;
+}
+
+.navIcons img:hover {
+	display: block;
+	background: white;
 }
 .contactMe a {
 	color: #027bff;
@@ -198,6 +207,10 @@ ul {
 	text-decoration: none;
 	color: #17191a;
 }
+.work a:hover,
+.work2 a:hover {
+	color: #027bff;
+}
 
 /*-------- Footer --------*/
 .footer {
@@ -209,8 +222,11 @@ ul {
 	text-align: center;
 }
 .footer a {
-	color: #027bff;
+	color: #17191a;
 	text-decoration: none;
+}
+.footer a:hover {
+	color: #027bff;
 }
 .underLineSmall {
 	display: block;
