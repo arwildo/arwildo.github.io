@@ -83,9 +83,13 @@ p {
 	margin-left: 40px;
 }
 
-.navIcons img:hover {
-	display: block;
-	background: white;
+.navIcons a i {
+	color: #8f9ea5;
+	width: 26px;
+	height: 26px;
+}
+.navIcons a i:hover {
+	color: #027bff;
 }
 .contactMe a {
 	color: #027bff;
@@ -222,11 +226,11 @@ ul {
 	text-align: center;
 }
 .footer a {
-	color: #17191a;
+	color: #027bff;
 	text-decoration: none;
 }
 .footer a:hover {
-	color: #027bff;
+	color: #17191a;
 }
 .underLineSmall {
 	display: block;
