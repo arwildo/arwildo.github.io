@@ -124,6 +124,9 @@ p {
 	animation-name: modalopen;
 	animation-duration: 1s;
 }
+.modal-content i {
+	color: #8f9ea5;
+}
 .closeBtn {
 	color: #8f9ea5;
 	float: right;
@@ -207,15 +210,25 @@ ul {
 	-moz-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.07);
 	box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.07);
 }
-.work ul {
-	position: absolute;
+.work > .textBox {
+	background-color: #17191a;
+	width: 350px;
+	padding: 20px;
 	bottom: 0;
-	right: 86%;
+	position: absolute;
+	opacity: 0.6;
 }
-.work ul li {
-	margin-top: 20px;
+.work > .textBox p,
+i {
+	color: white;
+	opacity: 1;
+	font-size: 18px;
 }
-
+.work > .textBox i {
+	color: white;
+	float: right;
+	opacity: 1;
+}
 /*-------- Work 02 --------*/
 .work2 {
 	width: 100%;
@@ -228,6 +241,7 @@ ul {
 	right: 0;
 	text-align: right;
 }
+
 .work2 > .workText > .underline {
 	display: block;
 	background-color: #027bff;
@@ -235,6 +249,7 @@ ul {
 	width: 61px;
 	margin-top: 5px;
 	float: right;
+	right: 0%;
 }
 .work2 > .workImg {
 	width: 85%;
@@ -243,14 +258,27 @@ ul {
 	-moz-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.05);
 	box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.05);
 }
-.work2 ul {
-	position: absolute;
+
+.work2 > .textBox {
+	background-color: #17191a;
+	width: 350px;
+	padding: 20px;
 	bottom: 0;
-	left: 86%;
+	position: absolute;
+	opacity: 0.6;
 }
-.work2 ul li {
-	margin-top: 20px;
+.work2 > .textBox p,
+i {
+	color: white;
+	opacity: 1;
+	font-size: 18px;
 }
+.work2 > .textBox i {
+	color: white;
+	float: right;
+	opacity: 1;
+}
+
 /*-------- Work 01 and 02 --------*/
 .work a,
 .work2 a {
