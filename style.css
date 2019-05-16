@@ -266,12 +266,14 @@ i {
 	bottom: 0;
 	position: absolute;
 	opacity: 0.6;
+	right: 0%;
 }
 .work2 > .textBox p,
 i {
 	color: white;
 	opacity: 1;
 	font-size: 18px;
+	text-align: right;
 }
 .work2 > .textBox i {
 	color: white;
