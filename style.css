@@ -217,6 +217,7 @@ ul {
 	bottom: 0;
 	position: absolute;
 	opacity: 0.6;
+	left: -1%;
 }
 .work > .textBox p,
 i {
@@ -249,7 +250,6 @@ i {
 	width: 61px;
 	margin-top: 5px;
 	float: right;
-	right: 0%;
 }
 .work2 > .workImg {
 	width: 85%;
@@ -266,7 +266,7 @@ i {
 	bottom: 0;
 	position: absolute;
 	opacity: 0.6;
-	right: 0%;
+	right: -1%;
 }
 .work2 > .textBox p,
 i {
@@ -335,9 +335,6 @@ i {
   */
 
 @media (min-width: 320px) and (max-width: 480px) {
-	* {
-		padding: 1px;
-	}
 	body {
 		width: 146%;
 	}
