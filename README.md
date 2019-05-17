@@ -7,6 +7,4 @@ My Portfolio site ([www.arwildo.space](https://www.arwildo.space/)) :computer: :
 ![alt text](https://raw.githubusercontent.com/arwildo/arwildo.github.io/master/preview/MyWebsite2(16x12).jpeg "Website Preview")
   
 ## Mobile Preview
-![alt text](https://raw.githubusercontent.com/arwildo/arwildo.github.io/master/preview/myWebMobileView.jpg "Website Preview")
-
 <img src="https://raw.githubusercontent.com/arwildo/arwildo.github.io/master/preview/myWebMobileView.jpg" width="500">
