@@ -56,6 +56,15 @@ p {
 	margin-top: 10px;
 	font-size: 20px;
 }
+/*-------- Scroll bar --------*/
+body::-webkit-scrollbar {
+	width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+}
+
 /*-------- Nav --------*/
 .nav {
 	display: flex;
