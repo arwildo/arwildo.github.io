@@ -63,6 +63,16 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
 	background-color: darkgrey;
+	border-radius: 1px;
+}
+
+div::-webkit-scrollbar {
+	width: 10px;
+}
+
+div::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+	border-radius: 50px;
 }
 
 /*-------- Nav --------*/
