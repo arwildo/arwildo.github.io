@@ -1,3 +1,4 @@
+// CCONTACT WINDOW
 // Get the modal element
 var modal = document.getElementById('simpleModal');
 // Get open modal button
@@ -28,3 +29,11 @@ function clickOutSide(e) {
 		modal.style.display = 'none';
 	}
 }
+
+
+// GOOGLE ANALYTICS
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+
+gtag('config', 'UA-51659765-2');
