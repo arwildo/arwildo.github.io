@@ -232,13 +232,14 @@ ul {
 #textbox1 {
 	background-color: white;
 	width: 350px;
-	padding: 20px;
+	height: 0px;
+	padding: 20px 20px 20px 0px;
 	bottom: 0;
 	position: absolute;
-	left: -200px;
 	list-style: none;
 	opacity: 0;
 	transition: 1s;
+	overflow: hidden;
 }
 .work > .textBox p,
 i {
@@ -251,8 +252,8 @@ i {
 }
 .work:hover #textbox1 {
 	transition: 1s;
-	left: 0;
 	opacity: 0.9;
+	height: 110px;
 }
 .work > .textBox li {
 	font-size: 110%;
@@ -291,29 +292,42 @@ i {
 	-moz-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.05);
 	box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.05);
 }
-
-.work2 > .textBox {
-	background-color: #17191a;
+#textbox2 {
+	background-color: white;
 	width: 350px;
-	padding: 20px;
+	height: 0px;
+	padding: 20px 0px 20px 20px;
 	bottom: 0;
+	right: 0;
 	position: absolute;
-	opacity: 0.6;
-	right: 0%;
+	list-style: none;
+	opacity: 0;
+	transition: 1s;
+	overflow: hidden;
 }
-.work2 > .textBox p,
-i {
-	color: white;
-	opacity: 1;
+.work2 > .textBox p {
+	color: black;
 	font-size: 18px;
-	text-align: right;
+	text-align: left;
 }
 .work2 > .textBox i {
-	color: white;
-	float: left;
-	opacity: 1;
+	color: black;
+	float: right;
 }
-
+.work2:hover #textbox2 {
+	transition: 1s;
+	opacity: 0.9;
+	height: 110px;
+}
+.work2 > .textBox li {
+	font-size: 110%;
+}
+.work2 > .textBox i {
+	padding-right: 10px;
+}
+#textbox2 li:hover i {
+	color: #027bff;
+}
 /*-------- Work 01 and 02 --------*/
 .work a,
 .work2 a {
