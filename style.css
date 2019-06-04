@@ -253,7 +253,7 @@ i {
 .work:hover #textbox1 {
 	transition: 1s;
 	opacity: 0.9;
-	height: 110px;
+	height: 130px;
 }
 .work > .textBox li {
 	font-size: 110%;
@@ -317,7 +317,7 @@ i {
 .work2:hover #textbox2 {
 	transition: 1s;
 	opacity: 0.9;
-	height: 110px;
+	height: 130px;
 }
 .work2 > .textBox li {
 	font-size: 110%;
@@ -337,6 +337,10 @@ i {
 .work a:hover,
 .work2 a:hover {
 	color: #027bff;
+}
+#usingText {
+	font-size: 10px;
+	font-style: italic;
 }
 /*-------- Footer --------*/
 .footer {
