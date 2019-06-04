@@ -338,7 +338,6 @@ i {
 .work2 a:hover {
 	color: #027bff;
 }
-
 /*-------- Footer --------*/
 .footer {
 	background-image: url(assets/images/Github_Blue_Large.png);
@@ -393,5 +392,11 @@ i {
 	}
 	.landingL {
 		padding-left: 1%;
+	}
+	.skills {
+		margin-bottom: 15em;
+	}
+	.work {
+		margin-bottom: 10em;
 	}
 }
