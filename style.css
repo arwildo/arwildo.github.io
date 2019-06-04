@@ -229,25 +229,39 @@ ul {
 	-moz-box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.07);
 	box-shadow: 0px 3px 70px 0px rgba(23, 30, 36, 0.07);
 }
-.work > .textBox {
-	background-color: #17191a;
+#textbox1 {
+	background-color: white;
 	width: 350px;
 	padding: 20px;
 	bottom: 0;
 	position: absolute;
-	opacity: 0.6;
-	left: 0%;
+	left: -200px;
+	list-style: none;
+	opacity: 0;
+	transition: 1s;
 }
 .work > .textBox p,
 i {
-	color: white;
-	opacity: 1;
+	color: black;
 	font-size: 18px;
 }
 .work > .textBox i {
-	color: white;
+	color: black;
 	float: right;
-	opacity: 1;
+}
+.work:hover #textbox1 {
+	transition: 1s;
+	left: 0;
+	opacity: 0.9;
+}
+.work > .textBox li {
+	font-size: 110%;
+}
+.work > .textBox i {
+	padding-right: 10px;
+}
+#textbox1 li:hover i {
+	color: #027bff;
 }
 /*-------- Work 02 --------*/
 .work2 {
