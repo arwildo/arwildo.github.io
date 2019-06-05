@@ -255,14 +255,31 @@ i {
 	opacity: 0.9;
 	height: 130px;
 }
+.work:hover .textBoxChild {
+	opacity: 0.9;
+	transition: 2s;
+}
 .work > .textBox li {
 	font-size: 110%;
+	margin-top: 0px;
 }
 .work > .textBox i {
-	padding-right: 10px;
+	padding-right: 13px;
 }
 #textbox1 li:hover i {
 	color: #027bff;
+}
+.textBoxChild {
+	width: auto;
+	background-color: #0000008e;
+	color: white;
+	opacity: 0;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 8px;
+	font-size: 13px;
+	color: white;
+	transition: 1s;
 }
 /*-------- Work 02 --------*/
 .work2 {
@@ -319,6 +336,10 @@ i {
 	opacity: 0.9;
 	height: 130px;
 }
+.work2:hover .textBoxChild2 {
+	opacity: 0.9;
+	transition: 2s;
+}
 .work2 > .textBox li {
 	font-size: 110%;
 }
@@ -327,6 +348,19 @@ i {
 }
 #textbox2 li:hover i {
 	color: #027bff;
+}
+.textBoxChild2 {
+	width: auto;
+	background-color: #0000008e;
+	color: white;
+	opacity: 0;
+	right: 35px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 8px;
+	font-size: 13px;
+	color: white;
+	transition: 1s;
 }
 /*-------- Work 01 and 02 --------*/
 .work a,
@@ -337,10 +371,6 @@ i {
 .work a:hover,
 .work2 a:hover {
 	color: #027bff;
-}
-#usingText {
-	font-size: 10px;
-	font-style: italic;
 }
 /*-------- Footer --------*/
 .footer {
