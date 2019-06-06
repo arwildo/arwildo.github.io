@@ -256,8 +256,9 @@ i {
 	height: 130px;
 }
 .work:hover .textBoxChild {
-	opacity: 0.4;
+	opacity: 0.7;
 	transition: 2s;
+	left: 0;
 }
 .work > .textBox li {
 	font-size: 110%;
@@ -271,14 +272,15 @@ i {
 }
 .textBoxChild {
 	width: auto;
-	background-color: #000000;
-	color: white;
+	color: rgb(0, 0, 0);
 	opacity: 0;
 	border-radius: 5px;
 	position: absolute;
 	bottom: 8px;
 	font-size: 13px;
 	transition: 1s;
+	font-style: italic;
+	left: -200px;
 }
 /*-------- Work 02 --------*/
 .work2 {
@@ -336,8 +338,9 @@ i {
 	height: 130px;
 }
 .work2:hover .textBoxChild2 {
-	opacity: 0.4;
+	opacity: 0.7;
 	transition: 2s;
+	right: 35px;
 }
 .work2 > .textBox li {
 	font-size: 110%;
@@ -350,15 +353,15 @@ i {
 }
 .textBoxChild2 {
 	width: auto;
-	background-color: #000000;
-	color: white;
+	color: rgb(0, 0, 0);
 	opacity: 0;
-	right: 35px;
 	border-radius: 5px;
 	position: absolute;
 	bottom: 8px;
 	font-size: 13px;
 	transition: 1s;
+	font-style: italic;
+	right: -200px;
 }
 /*-------- Work 01 and 02 --------*/
 .work a,
