@@ -131,7 +131,7 @@ div::-webkit-scrollbar-thumb {
 	height: 100%;
 	width: 100%;
 	overflow: auto;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.25);
 }
 
 .modal-content {
@@ -143,10 +143,9 @@ div::-webkit-scrollbar-thumb {
 	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.17), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
 	animation-name: modalopen;
 	animation-duration: 1s;
-	background-image: url(assets/images/bikingContactMe.svg);
-	background-position-x: right;
-	background-position-y: center;
-	background-size: 300px;
+	background-image: url(assets/images/bikingContactMe.svg), url(assets/images/Circle.png);
+	background-position: center right, center left;
+	background-size: 300px, 200px;
 	background-repeat: no-repeat;
 	border-radius: 8px;
 }
