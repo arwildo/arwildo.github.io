@@ -445,4 +445,11 @@ i {
 	.work {
 		margin-bottom: 10em;
 	}
+	.modal-content {
+		width: 70%;
+		background-size: 140px, 100px;
+	}
+	.modal-content i {
+		padding-right: 10px;
+	}
 }
