@@ -1,4 +1,4 @@
-// CCONTACT WINDOW
+// Contact window
 // Get the modal element
 var modal = document.getElementById('simpleModal');
 // Get open modal button
@@ -30,8 +30,7 @@ function clickOutSide(e) {
 	}
 }
 
-
-// GOOGLE ANALYTICS
+// Google Analytic
 window.dataLayer = window.dataLayer || [];
 function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
