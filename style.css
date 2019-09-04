@@ -252,10 +252,10 @@ ul {
 	overflow: hidden;
 	border-radius: 10px;
 }
-.work > .textBox p,
-i {
+.work > .textBox p {
 	color: black;
 	font-size: 18px;
+	text-align: justify;
 }
 .work > .textBox i {
 	color: black;
@@ -333,11 +333,12 @@ i {
 	opacity: 0;
 	transition: 1s;
 	overflow: hidden;
+	border-radius: 10px;
 }
 .work2 > .textBox p {
 	color: black;
 	font-size: 18px;
-	text-align: left;
+	text-align: justify;
 }
 .work2 > .textBox i {
 	color: black;
@@ -349,15 +350,16 @@ i {
 	height: 130px;
 }
 .work2:hover .textBoxChild2 {
-	opacity: 0.7;
-	transition: 2s;
+	opacity: 0.6;
+	transition: 1.2s;
 	right: 35px;
 }
 .work2 > .textBox li {
 	font-size: 110%;
+	margin-top: 0px;
 }
 .work2 > .textBox i {
-	padding-right: 10px;
+	padding-right: 13px;
 }
 #textbox2 li:hover i {
 	color: #027bff;
