@@ -28,8 +28,8 @@ body {
 	margin: auto;
 	background-image: url(assets/images/BG.png);
 	background-position: top;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-size: contain;
+	background-repeat: repeat;
 }
 .blue {
 	color: #027bff;
@@ -417,9 +417,6 @@ ul {
 @media (min-width: 481px) and (max-width: 767px) {
 	body {
 		width: 100%;
-	}
-	.landingL {
-		padding-left: 1%;
 	}
 }
 
