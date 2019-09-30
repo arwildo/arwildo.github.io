@@ -58,18 +58,16 @@ p {
 }
 /*-------- Scroll bar --------*/
 body::-webkit-scrollbar {
-	width: 8px;
+	width: 6px;
 }
 body::-webkit-scrollbar-thumb {
 	background-color: darkgrey;
-	border-radius: 5px;
 }
 div::-webkit-scrollbar {
-	width: 8px;
+	width: 6px;
 }
 div::-webkit-scrollbar-thumb {
 	background-color: darkgrey;
-	border-radius: 5px;
 }
 
 /*-------- Nav --------*/
