@@ -35,12 +35,12 @@ body {
 	color: #027bff;
 }
 h1 {
-	font-size: 40px;
+	font-size: 35px;
 	font-weight: 400;
 	color: #17191a;
 }
 h2 {
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: 400;
 	color: #17191a;
 }
@@ -54,7 +54,7 @@ p {
 	opacity: 0.8;
 	font-weight: 100;
 	margin-top: 10px;
-	font-size: 20px;
+	font-size: 19px;
 }
 /*-------- Scroll bar --------*/
 body::-webkit-scrollbar {
@@ -128,30 +128,25 @@ div::-webkit-scrollbar-thumb {
 	height: 100%;
 	width: 100%;
 	overflow: auto;
-	background-color: rgba(0, 0, 0, 0.25);
+	background-color: rgba(0, 0, 0, 0.19);
 }
 
 .modal-content {
 	background-color: #f4f4f4;
 	margin: 20% auto;
 	padding: 20px;
-	width: 50%;
-	height: 10%;
+	width: 400px;
+	height: 40px;
 	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.17), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
 	animation-name: modalopen;
 	animation-duration: 1s;
-	background-image: url(assets/images/bikingContactMe.svg), url(assets/images/Circle.png);
-	background-position: center right, center left;
-	background-size: 300px, 200px;
-	background-repeat: no-repeat;
 	border-radius: 8px;
 }
 .modal-content i {
 	color: #8f9ea5;
-	padding-right: 20px;
 }
-.modal-content p {
-	padding-top: 10px;
+.fa-envelope {
+    margin-right: 20px;
 }
 .closeBtn {
 	color: #8f9ea5;
