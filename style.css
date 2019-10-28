@@ -28,7 +28,7 @@ body {
 	margin: auto;
 	background-image: url(assets/images/BG.png);
 	background-position: top;
-	background-size: contain;
+	background-size: cover;
 	background-repeat: repeat;
 }
 .blue {
@@ -72,7 +72,7 @@ div::-webkit-scrollbar-thumb {
 	border-radius: 5px;
 }
 
-/*-------- Nav --------*/
+/*-------- nav --------*/
 .nav {
 	display: flex;
 	align-items: center;
@@ -410,9 +410,6 @@ ul {
   */
 
 @media (min-width: 481px) and (max-width: 767px) {
-	body {
-		width: 100%;
-	}
 }
 
 /* 
@@ -421,35 +418,4 @@ ul {
   */
 
 @media (min-width: 320px) and (max-width: 480px) {
-	body {
-		width: 146%;
-	}
-	.navIcons a {
-		margin-left: 20px;
-	}
-	.landingL {
-		padding-left: 1%;
-	}
-	.skills {
-		margin-bottom: 15em;
-	}
-	.work {
-		margin-bottom: 10em;
-	}
-	.modal-content {
-		width: 70%;
-		background-size: 140px, 100px;
-	}
-	.modal-content i {
-		padding-right: 10px;
-	}
-	#textbox1 {
-		padding-left: 10px;
-	}
-	.textBoxChild {
-		padding-left: 10px;
-	}
-	.work > .workText {
-		padding-left: 5px;
-	}
 }
