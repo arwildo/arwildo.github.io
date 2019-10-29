@@ -28,7 +28,7 @@ body {
 	margin: auto;
 	background-image: url(assets/images/BG.png);
 	background-position: top;
-	background-size: cover;
+	background-size: contain;
 	background-repeat: repeat;
 }
 .blue {
@@ -97,7 +97,6 @@ div::-webkit-scrollbar-thumb {
 .navIcons a i:hover {
 	color: #027bff;
 }
-
 .navIcons a,
 .contactMe a,
 .contactMe i {
@@ -130,7 +129,6 @@ div::-webkit-scrollbar-thumb {
 	overflow: auto;
 	background-color: rgba(0, 0, 0, 0.19);
 }
-
 .modal-content {
 	background-color: #f4f4f4;
 	margin: 20% auto;
@@ -159,7 +157,6 @@ div::-webkit-scrollbar-thumb {
 	text-decoration: none;
 	cursor: pointer;
 }
-
 @keyframes modalopen {
 	from {
 		opacity: 0;
@@ -187,6 +184,9 @@ ul {
 .landingL {
 	margin-top: 4em;
 }
+.landingR img {
+	width: 300px;
+}
 .scroll {
 	position: absolute;
 	bottom: 180px;
@@ -204,7 +204,7 @@ ul {
 }
 .skills img {
 	width: 40px;
-	margin: 0 15px;
+	margin: 0 18px;
 }
 
 /*-------- Work 01 --------*/
@@ -215,7 +215,7 @@ ul {
 }
 .work > .workText {
 	position: relative;
-	top: 85px;
+	top: 100px;
 }
 .work > .workText > .underline {
 	display: block;
@@ -261,7 +261,7 @@ ul {
 .work:hover .textBoxChild {
 	opacity: 0.6;
 	transition: 1.2s;
-	left: 0;
+	bottom: 0;
 }
 .work > .textBox li {
 	font-size: 110%;
@@ -279,11 +279,9 @@ ul {
 	opacity: 0;
 	border-radius: 5px;
 	position: absolute;
-	bottom: 8px;
+	bottom: -5px;
 	font-size: 13px;
 	transition: 1s;
-	font-style: italic;
-	left: -200px;
 }
 /*-------- Work 02 --------*/
 .work2 {
@@ -293,11 +291,10 @@ ul {
 }
 .work2 > .workText {
 	position: relative;
-	top: 85px;
+	top: 100px;
 	right: 0;
 	text-align: right;
 }
-
 .work2 > .workText > .underline {
 	display: block;
 	background-color: #027bff;
@@ -344,7 +341,7 @@ ul {
 .work2:hover .textBoxChild2 {
 	opacity: 0.6;
 	transition: 1.2s;
-	right: 35px;
+	bottom: 0;
 }
 .work2 > .textBox li {
 	font-size: 110%;
@@ -362,11 +359,9 @@ ul {
 	opacity: 0;
 	border-radius: 5px;
 	position: absolute;
-	bottom: 8px;
+	bottom: -5px;
 	font-size: 13px;
 	transition: 1s;
-	font-style: italic;
-	right: -200px;
 }
 /*-------- Work 01 and 02 --------*/
 .work a,
@@ -403,19 +398,805 @@ ul {
 }
 
 /*-------- Media Responsive --------*/
+@media (min-width: 881px) and (max-width: 1024px) {
+	body {
+		background-size: contain;
+	}
 
-/* 
-	##Device = Low Resolution Tablets, Mobiles (Landscape)
-	##Screen = B/w 481px to 767px
-  */
+	
+	.landing {
+		height: 100vh;
+	}
 
-@media (min-width: 481px) and (max-width: 767px) {
+
+	.navIcons a i {
+		font-size: 25px;
+	}
+	.contactMe a i {
+		font-size: 23px;
+	}
+	h1 {
+		font-size: 27px;
+	}
+	p {
+		font-size: 15px;
+	}
+	.landingR img {
+		width: 270px;
+	}
+	.scroll {
+		bottom: 150px;
+		width: 14px;
+	}
+
+
+	.modal-content {
+		width: 300px;
+		height: 30px;
+	}
+
+	.skills {
+		margin-bottom: 20em;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	.skills img {
+		width: 28px;
+		margin: 0 12px;
+	}
+
+
+	.work {
+		margin-bottom: 10em;
+	}
+	.work > .workText {
+		top: 72px;
+	}
+	.work > .workText > .underline {
+		height: 3px;
+		width: 55px;
+	}
+	h5 {
+		font-size: 14px;
+	}
+	.work > .workImg {
+		width: 86%;
+	}
+	#textbox1 {
+		width: 285px;
+	}
+	.work:hover #textbox1 {
+		height: 100px;
+	}
+	.work > .textBox p {
+		font-size: 14px;
+	}
+	.work > .textBox li i {
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	.textBoxChild {
+		font-size: 11px;
+	}
+
+
+	.work2 {
+		margin-bottom: 10em;
+	}
+	.work2 > .workText {
+		top: 80px;
+	}
+	.work2 > .workText > .underline {
+		height: 3px;
+		width: 56px;
+	}
+	h5 {
+		font-size: 16px;
+	}
+	.work2 > .workImg {
+		width: 86%;
+	}
+	#textbox2 {
+		width: 285px;
+	}
+	.work2:hover #textbox2 {
+		height: 100px;
+	}
+	.work2 > .textBox p {
+		font-size: 14px;
+	}
+	.work2 > .textBox li i {
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	.textBoxChild2 {
+		font-size: 11px;
+	}
+
+
+	h3 {
+		font-size: 14px;
+	}
+	.underLineSmall {
+		height: 2.8px;
+		width: 38px;
+	}
+	.footer {
+		background-size: 250px;
+	}
+
+
+}
+@media (min-width: 692px) and (max-width: 880px) {
+	body {
+		background-size: contain;
+		width: 70vw;
+	}
+
+	
+	.landing {
+		height: 100vh;
+	}
+
+
+	.navIcons a i {
+		font-size: 25px;
+	}
+	.contactMe a i {
+		font-size: 23px;
+	}
+	h1 {
+		font-size: 26px;
+	}
+	p {
+		font-size: 15px;
+	}
+	.landingR img {
+		width: 240px;
+	}
+	.scroll {
+		bottom: 160px;
+		width: 14px;
+	}
+
+
+	.modal-content {
+		width: 300px;
+		height: 30px;
+	}
+
+	.skills {
+		margin-bottom: 10em;
+	}
+	h2 {
+		font-size: 21px;
+	}
+	.skills img {
+		width: 28px;
+		margin: 0 12px;
+	}
+
+
+	.work {
+		margin-bottom: 10em;
+	}
+	.work > .workText {
+		top: 72px;
+	}
+	.work > .workText > .underline {
+		height: 3px;
+		width: 56px;
+	}
+	h5 {
+		font-size: 14px;
+	}
+	.work > .workImg {
+		width: 85%;
+	}
+	#textbox1 {
+		width: 285px;
+	}
+	.work:hover #textbox1 {
+		height: 100px;
+	}
+	.work > .textBox p {
+		font-size: 14px;
+	}
+	.work > .textBox li i {
+		font-size: 22px;
+	}
+	.textBoxChild {
+		font-size: 11px;
+	}
+
+
+	.work2 {
+		margin-bottom: 10em;
+	}
+	.work2 > .workText {
+		top: 72px;
+	}
+	.work2 > .workText > .underline {
+		height: 3px;
+		width: 56px;
+	}
+	h5 {
+		font-size: 16px;
+	}
+	.work2 > .workImg {
+		width: 85%;
+	}
+	#textbox2 {
+		width: 285px;
+	}
+	.work2:hover #textbox2 {
+		height: 100px;
+	}
+	.work2 > .textBox p {
+		font-size: 14px;
+	}
+	.work2 > .textBox li i {
+		font-size: 22px;
+	}
+	.textBoxChild2 {
+		font-size: 11px;
+	}
+
+
+	h3 {
+		font-size: 14px;
+	}
+	.underLineSmall {
+		height: 2.8px;
+		width: 38px;
+	}
+	.footer {
+		background-size: 240px;
+	}
+
+
+}
+@media (min-width: 631px) and (max-width: 691px) {
+	body {
+		background-size: contain;
+		width: 70vw;
+	}
+
+	
+	.landing {
+		height: 100vh;
+	}
+
+
+	.navIcons a {
+		margin-left: 30px;
+	}
+	.navIcons a i {
+		font-size: 21px;
+	}
+	.contactMe i {
+		font-size: 21px;
+	}
+	.txtContactMe {
+		font-size: 12px;
+	}
+	h1 {
+		font-size: 23px;
+	}
+	p {
+		font-size: 13px;
+	}
+	.landingR img {
+		width: 230px;
+	}
+	.scroll {
+		bottom: 150px;
+		width: 14px;
+	}
+
+
+	.modal-content {
+		width: 300px;
+		height: 30px;
+	}
+
+
+	.skills {
+		margin-bottom: 10em;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	.skills img {
+		width: 28px;
+		margin: 0 12px;
+	}
+
+
+	.work {
+		margin-bottom: 10em;
+	}
+	.work > .workText {
+		top: 72px;
+	}
+	.work > .workText > .underline {
+		height: 3px;
+		width: 56px;
+	}
+	h5 {
+		font-size: 14px;
+	}
+	.work > .workImg {
+		width: 84%;
+	}
+	#textbox1 {
+		width: 285px;
+	}
+	.work:hover #textbox1 {
+		height: 95px;
+	}
+	.work > .textBox p {
+		font-size: 13.5px;
+	}
+	.work > .textBox li i {
+		font-size: 21px;
+		margin-top: 8px;
+	}
+	.textBoxChild {
+		font-size: 10.5px;
+	}
+
+
+	.work2 {
+		margin-bottom: 10em;
+	}
+	.work2 > .workText {
+		top: 72px;
+	}
+	.work2 > .workText > .underline {
+		height: 3px;
+		width: 56px;
+	}
+	.work2 > .workImg {
+		width: 84%;
+	}
+	#textbox2 {
+		width: 285px;
+	}
+	.work2:hover #textbox2 {
+		height: 95px;
+	}
+	.work2 > .textBox p {
+		font-size: 13.5px;
+	}
+	.work2 > .textBox li i {
+		font-size: 21px;
+		margin-top: 8px;
+	}
+	.textBoxChild2 {
+		font-size: 10.5px;
+	}
+
+
+	h3 {
+		font-size: 14px;
+	}
+	.underLineSmall {
+		height: 2.8px;
+		width: 38px;
+	}
+	.footer {
+		background-size: 240px;
+	}
+
+
+}
+@media (min-width: 540px) and (max-width: 630px) {
+	body {
+		background-size: contain;
+		width: 78vw;
+	}
+
+	
+	.landing {
+		height: 100vh;
+	}
+
+
+	.navIcons a {
+		margin-left: 30px;
+	}
+	.navIcons a i {
+		font-size: 21px;
+	}
+	.contactMe i {
+		font-size: 21px;
+	}
+	.txtContactMe {
+		font-size: 12px;
+	}
+	h1 {
+		font-size: 23px;
+	}
+	p {
+		font-size: 13px;
+	}
+	.landingR img {
+		width: 190px;
+	}
+	.scroll {
+		bottom: 150px;
+		width: 14px;
+	}
+
+
+	.modal-content {
+		width: 300px;
+		height: 30px;
+	}
+
+
+	.skills {
+		margin-bottom: 10em;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	.skills img {
+		width: 28px;
+		margin: 0 12px;
+	}
+
+
+	.work {
+		margin-bottom: 10em;
+	}
+	.work > .workText {
+		top: 72px;
+	}
+	.work > .workText > .underline {
+		height: 3px;
+		width: 56px;
+	}
+	h5 {
+		font-size: 14px;
+	}
+	.work > .workImg {
+		width: 84%;
+	}
+	#textbox1 {
+		width: 285px;
+	}
+	.work:hover #textbox1 {
+		height: 95px;
+	}
+	.work > .textBox p {
+		font-size: 13px;
+	}
+	.work > .textBox li i {
+		font-size: 21px;
+		margin-top: 10px;
+	}
+	.textBoxChild {
+		font-size: 10.5px;
+	}
+
+
+	.work2 {
+		margin-bottom: 10em;
+	}
+	.work2 > .workText {
+		top: 72px;
+	}
+	.work2 > .workText > .underline {
+		height: 3px;
+		width: 56px;
+	}
+	.work2 > .workImg {
+		width: 84%;
+	}
+	#textbox2 {
+		width: 285px;
+	}
+	.work2:hover #textbox2 {
+		height: 95px;
+	}
+	.work2 > .textBox p {
+		font-size: 13px;
+	}
+	.work2 > .textBox li i {
+		font-size: 21px;
+		margin-top: 10px;
+	}
+	.textBoxChild2 {
+		font-size: 10.5px;
+	}
+
+
+	h3 {
+		font-size: 14px;
+	}
+	.underLineSmall {
+		height: 2.8px;
+		width: 38px;
+	}
+	.footer {
+		background-size: 240px;
+	}
+
+
 }
 
-/* 
-	##Device = Most of the Smartphones Mobiles (Portrait)
-	##Screen = B/w 320px to 490px
-  */
+@media (min-width: 480px) and (max-width: 539px) {
+	body {
+		background-size: contain;
+		width: 80vw;
+	}
 
-@media (min-width: 320px) and (max-width: 480px) {
+	
+	.landing {
+		height: 100vh;
+	}
+
+
+	.navIcons a {
+		margin-left: 28px;
+	}
+	.navIcons a i {
+		font-size: 21px;
+	}
+	.contactMe i {
+		font-size: 21px;
+	}
+	.txtContactMe {
+		font-size: 12px;
+	}
+	h1 {
+		font-size: 22px;
+	}
+	p {
+		font-size: 12px;
+	}
+	.landingR img {
+		width: 170px;
+	}
+	.scroll {
+		bottom: 150px;
+		width: 14px;
+	}
+
+
+	.modal-content {
+		width: 300px;
+		height: 30px;
+	}
+
+
+	.skills {
+		margin-bottom: 10em;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	.skills img {
+		width: 28px;
+		margin: 0 12px;
+	}
+
+
+	.work {
+		margin-bottom: 10em;
+	}
+	.work > .workText {
+		top: 70px;
+	}
+	.work > .workText > .underline {
+		height: 3px;
+		width: 56px;
+	}
+	h5 {
+		font-size: 12.5px;
+	}
+	.work > .workImg {
+		width: 84%;
+	}
+	#textbox1 {
+		width: 285px;
+	}
+	.work:hover #textbox1 {
+		height: 95px;
+	}
+	.work > .textBox p {
+		font-size: 13px;
+	}
+	.work > .textBox li i {
+		font-size: 20.5px;
+		margin-top: 10px;
+	}
+	.textBoxChild {
+		font-size: 10px;
+	}
+
+
+	.work2 {
+		margin-bottom: 10em;
+	}
+	.work2 > .workText {
+		top: 70px;
+	}
+	.work2 > .workText > .underline {
+		height: 3px;
+		width: 56px;
+	}
+	.work2 > .workImg {
+		width: 84%;
+	}
+	#textbox2 {
+		width: 285px;
+	}
+	.work2:hover #textbox2 {
+		height: 95px;
+	}
+	.work2 > .textBox p {
+		font-size: 13px;
+	}
+	.work2 > .textBox li i {
+		font-size: 20.5px;
+		margin-top: 10px;
+	}
+	.textBoxChild2 {
+		font-size: 10px;
+	}
+
+
+	h3 {
+		font-size: 14px;
+	}
+	.underLineSmall {
+		height: 2.8px;
+		width: 38px;
+	}
+	.footer {
+		background-size: 230px;
+	}
+
+
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+	body {
+		background-size: contain;
+		width: 85vw;
+	}
+
+	
+	.landing {
+		height: 60vh;
+	}
+
+
+	.navIcons a {
+		margin-left: 20px;
+	}
+	.navIcons a i {
+		font-size: 21px;
+	}
+	.contactMe i {
+		font-size: 21px;
+	}
+	.txtContactMe {
+		font-size: 12px;
+	}
+	h1 {
+		font-size: 23px;
+	}
+	p {
+		font-size: 12px;
+	}
+	.landingR img {
+		width: 170px;
+		margin-top: 50px;
+	}
+	.scroll {
+		bottom: 70px;
+		width: 13px;
+	}
+
+
+	.modal-content {
+		width: 300px;
+		height: 30px;
+	}
+
+
+	.skills {
+		margin-bottom: 10em;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	.skills img {
+		width: 28px;
+		margin: 0 12px;
+	}
+
+
+	.work {
+		margin-bottom: 10em;
+	}
+	.work > .workText {
+		top: 65px;
+	}
+	.work > .workText > .underline {
+		height: 3px;
+		width: 48px;
+	}
+	h5 {
+		font-size: 13px;
+	}
+	.work > .workImg {
+		width: 84%;
+	}
+	#textbox1 {
+		width: 274px;
+	}
+	.work:hover #textbox1 {
+		height: 95px;
+	}
+	.work > .textBox p {
+		font-size: 13px;
+	}
+	.work > .textBox li i {
+		font-size: 21px;
+		margin-top: 10px;
+	}
+	.textBoxChild {
+		font-size: 10.5px;
+	}
+
+
+	.work2 {
+		margin-bottom: 10em;
+	}
+	.work2 > .workText {
+		top: 65px;
+	}
+	.work2 > .workText > .underline {
+		height: 3px;
+		width: 48px;
+	}
+	.work2 > .workImg {
+		width: 84%;
+	}
+	#textbox2 {
+		width: 274px;
+	}
+	.work2:hover #textbox2 {
+		height: 95px;
+	}
+	.work2 > .textBox p {
+		font-size: 13px;
+	}
+	.work2 > .textBox li i {
+		font-size: 21px;
+		margin-top: 10px;
+	}
+	.textBoxChild2 {
+		font-size: 10.5px;
+	}
+
+
+	h3 {
+		font-size: 14px;
+	}
+	.underLineSmall {
+		height: 2.8px;
+		width: 38px;
+	}
+	.footer {
+		background-size: 230px;
+	}
+
+
 }
