@@ -35,17 +35,17 @@ body {
 	color: #027bff;
 }
 h1 {
-	font-size: 35px;
+	font-size: 33px;
 	font-weight: 400;
 	color: #17191a;
 }
 h2 {
-	font-size: 30px;
+	font-size: 28px;
 	font-weight: 400;
 	color: #17191a;
 }
 h5 {
-	font-size: 20px;
+	font-size: 18px;
 	margin-top: 10px;
 	color: unset;
 }
@@ -54,7 +54,7 @@ p {
 	opacity: 0.8;
 	font-weight: 100;
 	margin-top: 10px;
-	font-size: 19px;
+	font-size: 17.5px;
 }
 /*-------- Scroll bar --------*/
 body::-webkit-scrollbar {
@@ -115,6 +115,9 @@ div::-webkit-scrollbar-thumb {
 .contactMe:hover a,
 .contactMe:hover i {
 	color: #8f9ea5;
+}
+.txtContactMe {
+	font-size: 15px;
 }
 
 /*-------- Modal --------*/
@@ -205,6 +208,11 @@ ul {
 .skills img {
 	width: 40px;
 	margin: 0 18px;
+	filter: grayscale(1);
+	transition: 1s ease;
+}
+.skills img:hover {
+	filter: grayscale(0);
 }
 
 /*-------- Work 01 --------*/
@@ -246,12 +254,14 @@ ul {
 }
 .work > .textBox p {
 	color: black;
-	font-size: 18px;
+	font-size: 16px;
 	text-align: justify;
 }
 .work > .textBox i {
 	color: black;
 	float: right;
+	padding-right: 13px;
+	margin-top: 10px;
 }
 .work:hover #textbox1 {
 	transition: 1s;
@@ -267,9 +277,6 @@ ul {
 	font-size: 110%;
 	margin-top: 0px;
 }
-.work > .textBox i {
-	padding-right: 13px;
-}
 #textbox1 li:hover i {
 	color: #027bff;
 }
@@ -280,7 +287,7 @@ ul {
 	border-radius: 5px;
 	position: absolute;
 	bottom: -5px;
-	font-size: 13px;
+	font-size: 12px;
 	transition: 1s;
 }
 /*-------- Work 02 --------*/
@@ -326,12 +333,14 @@ ul {
 }
 .work2 > .textBox p {
 	color: black;
-	font-size: 18px;
+	font-size: 16px;
 	text-align: justify;
 }
 .work2 > .textBox i {
 	color: black;
 	float: right;
+	padding-right: 13px;
+	margin-top: 10px;
 }
 .work2:hover #textbox2 {
 	transition: 1s;
@@ -347,9 +356,6 @@ ul {
 	font-size: 110%;
 	margin-top: 0px;
 }
-.work2 > .textBox i {
-	padding-right: 13px;
-}
 #textbox2 li:hover i {
 	color: #027bff;
 }
@@ -360,7 +366,7 @@ ul {
 	border-radius: 5px;
 	position: absolute;
 	bottom: -5px;
-	font-size: 13px;
+	font-size: 12px;
 	transition: 1s;
 }
 /*-------- Work 01 and 02 --------*/
