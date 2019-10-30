@@ -130,10 +130,9 @@ div::-webkit-scrollbar-thumb {
 	height: 100%;
 	width: 100%;
 	overflow: auto;
-	background-color: rgba(0, 0, 0, 0.19);
 }
 .modal-content {
-	background-color: #f4f4f4;
+	background-color: white;
 	margin: 20% auto;
 	padding: 20px;
 	width: 400px;
@@ -401,6 +400,40 @@ ul {
 	width: 41px;
 	margin: 5px auto 0 auto;
 	background-color: #027bff;
+}
+
+
+/*-------- Scroll To Top --------*/
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    background-color: #027bff;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100px;
+	animation: openScrollBtn .8s;
+	
+	width: 45px;
+	height: 45px;
+}
+
+#scrollToTop:focus {
+    background-color: #888;
+}
+
+@keyframes openScrollBtn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /*-------- Media Responsive --------*/
