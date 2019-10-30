@@ -1072,7 +1072,10 @@ ul {
 
 	
 	.landing {
-		height: 60vh;
+		height: 80vh;
+	}
+	.landingWrapper {
+		margin-top: -30px;
 	}
 
 
@@ -1099,7 +1102,7 @@ ul {
 		margin-top: 50px;
 	}
 	.scroll {
-		bottom: 70px;
+		bottom: 5vh;
 		width: 13px;
 	}
 
@@ -1126,7 +1129,7 @@ ul {
 		margin-bottom: 10em;
 	}
 	.work > .workText {
-		top: 65px;
+		top: 60px;
 	}
 	.work > .workText > .underline {
 		height: 3px;
@@ -1142,17 +1145,17 @@ ul {
 		width: 274px;
 	}
 	.work:hover #textbox1 {
-		height: 95px;
+		height: 85px;
 	}
 	.work > .textBox p {
 		font-size: 13px;
 	}
 	.work > .textBox li i {
-		font-size: 21px;
-		margin-top: 10px;
+		font-size: 19px;
+		margin-top: 3px;
 	}
 	.textBoxChild {
-		font-size: 10.5px;
+		font-size: 10px;
 	}
 
 
@@ -1160,7 +1163,7 @@ ul {
 		margin-bottom: 10em;
 	}
 	.work2 > .workText {
-		top: 65px;
+		top: 60px;
 	}
 	.work2 > .workText > .underline {
 		height: 3px;
@@ -1173,17 +1176,17 @@ ul {
 		width: 274px;
 	}
 	.work2:hover #textbox2 {
-		height: 95px;
+		height: 85px;
 	}
 	.work2 > .textBox p {
 		font-size: 13px;
 	}
 	.work2 > .textBox li i {
-		font-size: 21px;
-		margin-top: 10px;
+		font-size: 19px;
+		margin-top: 3px;
 	}
 	.textBoxChild2 {
-		font-size: 10.5px;
+		font-size: 10px;
 	}
 
 
