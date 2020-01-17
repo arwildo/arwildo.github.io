@@ -144,7 +144,6 @@ div::-webkit-scrollbar-thumb {
 	border-radius: 7px;
 }
 #textbox1 {
-	background-color: white;
 	width: 350px;
 	height: 0px;
 	padding: 20px 20px 20px 20px;
@@ -155,6 +154,9 @@ div::-webkit-scrollbar-thumb {
 	transition: 1s;
 	overflow: hidden;
 	border-radius: 7px;
+
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
 }
 .work > .textBox p {
 	color: black;
@@ -223,7 +225,6 @@ div::-webkit-scrollbar-thumb {
 	border-radius: 7px;
 }
 #textbox2 {
-	background-color: white;
 	width: 350px;
 	height: 0px;
 	padding: 20px 20px 20px 20px;
@@ -235,6 +236,9 @@ div::-webkit-scrollbar-thumb {
 	transition: 1s;
 	overflow: hidden;
 	border-radius: 7px;
+
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
 }
 .work2 > .textBox p {
 	color: black;
