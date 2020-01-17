@@ -293,7 +293,6 @@ div::-webkit-scrollbar-thumb {
 	background-image: url(assets/images/footerbg.png);
 	background-repeat: no-repeat;
 	background-position: right top;
-	background-size: 320px;
 	padding-bottom: 7em;
 	text-align: center;
 }
