@@ -3,9 +3,9 @@
 
 
 ## Preview
-![alt text](https://raw.githubusercontent.com/arwildo/arwildo.github.io/master/preview/MyWebsite%20(16x12).jpeg "Website Preview")
+![alt text](https://raw.githubusercontent.com/arwildo/arwildo.github.io/master/assets/images/arwildo-space.png "Website Preview")
     
-![alt text](https://raw.githubusercontent.com/arwildo/arwildo.github.io/master/preview/MyWebsite2(16x12).jpeg "Website Preview")
+![alt text](https://raw.githubusercontent.com/arwildo/arwildo.github.io/master/assets/images/arwildo-space2.png "Website Preview")
 
 
 ## Built With
