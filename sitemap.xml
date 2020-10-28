@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://arwildo.com/</loc>
+  <lastmod>2020-10-28T08:23:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://arwildo.com/textul/</loc>
+  <lastmod>2020-10-28T02:12:21+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://arwildo.com/flood-warning/</loc>
+  <lastmod>2020-10-28T02:26:37+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://arwildo.com/space-view/</loc>
+  <lastmod>2020-10-28T02:27:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://arwildo.com/more-projects/</loc>
+  <lastmod>2020-10-28T08:23:46+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://arwildo.com/space-view/moon/</loc>
+  <lastmod>2020-10-28T02:27:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://arwildo.com/space-view/mars/</loc>
+  <lastmod>2020-10-28T02:27:44+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://arwildo.com/laboratory-shop/</loc>
+  <lastmod>2020-10-28T02:31:01+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
