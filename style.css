@@ -32,7 +32,7 @@ body {
   background-repeat: repeat;
 }
 .blue {
-  color: #027bff;
+  color: #4299E1;
 }
 h1 {
   font-size: 33px;
@@ -96,7 +96,7 @@ div::-webkit-scrollbar-thumb {
   height: 26px;
 }
 .navIcons a i:hover {
-  color: #027bff;
+  color: #4299E1;
 }
 .navIcons a,
 .contactMe a,
@@ -105,12 +105,12 @@ div::-webkit-scrollbar-thumb {
   vertical-align: middle;
 }
 .contactMe a {
-  color: #027bff;
+  color: #4299E1;
   text-decoration: none;
   font-weight: 100;
 }
 .contactMe i {
-  color: #027bff;
+  color: #4299E1;
   margin-right: 15px;
 }
 .contactMe:hover a,
@@ -239,7 +239,7 @@ ul {
 }
 .work > .workText > .underline {
   display: block;
-  background-color: #027bff;
+  background-color: #4299E1;
   height: 3px;
   width: 61px;
   margin-top: 5px;
@@ -294,7 +294,7 @@ ul {
   margin-top: 0px;
 }
 #textbox1 li:hover i {
-  color: #027bff;
+  color: #4299E1;
 }
 .textBoxChild {
   width: auto;
@@ -320,7 +320,7 @@ ul {
 }
 .work2 > .workText > .underline {
   display: block;
-  background-color: #027bff;
+  background-color: #4299E1;
   height: 3px;
   width: 61px;
   margin-top: 5px;
@@ -376,7 +376,7 @@ ul {
   margin-top: 0px;
 }
 #textbox2 li:hover i {
-  color: #027bff;
+  color: #4299E1;
 }
 .textBoxChild2 {
   width: auto;
@@ -396,7 +396,7 @@ ul {
 }
 .work a:hover,
 .work2 a:hover {
-  color: #027bff;
+  color: #4299E1;
 }
 /*-------- Footer --------*/
 .footer {
@@ -408,7 +408,7 @@ ul {
   text-align: center;
 }
 .footer a {
-  color: #027bff;
+  color: #4299E1;
   text-decoration: none;
 }
 .footer a:hover {
@@ -419,7 +419,7 @@ ul {
   height: 3px;
   width: 41px;
   margin: 5px auto 0 auto;
-  background-color: #027bff;
+  background-color: #4299E1;
 }
 
 /*-------- Scroll To Top --------*/
@@ -431,7 +431,7 @@ ul {
   font-size: 13px;
   border: none;
   outline: none;
-  background-color: #027bff;
+  background-color: #4299E1;
   color: white;
   cursor: pointer;
   padding: 15px;
