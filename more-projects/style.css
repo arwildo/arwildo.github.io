@@ -319,7 +319,7 @@ div::-webkit-scrollbar-thumb {
     font-size: 13px;
     border: none;
     outline: none;
-    background-color: #4299E1;
+    background-image: linear-gradient(to bottom right, #bee3f8, #3182cf);
     color: white;
     cursor: pointer;
     padding: 15px;
