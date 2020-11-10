@@ -56,6 +56,11 @@ p {
   margin-top: 10px;
   font-size: 17.5px;
 }
+.fa-gradient {
+	background: -webkit-gradient(linear, left top, right bottom, from(#3182cf), to(#bee3f8));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 
 /*-------- Scroll bar --------*/
 body::-webkit-scrollbar {
@@ -431,7 +436,7 @@ ul {
   font-size: 13px;
   border: none;
   outline: none;
-  background-color: #4299E1;
+  background-image: linear-gradient(to bottom right, #bee3f8, #3182cf);
   color: white;
   cursor: pointer;
   padding: 15px;
