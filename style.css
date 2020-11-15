@@ -32,7 +32,7 @@ body {
   background-repeat: repeat;
 }
 .blue {
-  color: #4299E1;
+  color: #3182ce;
 }
 h1 {
   font-size: 33px;
@@ -57,7 +57,8 @@ p {
   font-size: 17.5px;
 }
 .fa-gradient {
-	background: -webkit-gradient(linear, left top, right bottom, from(#3182cf), to(#bee3f8));
+  background: #3182CE;
+  background: linear-gradient(155deg, #3182CE 0%, #BEE3F8 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -432,7 +433,7 @@ ul {
   font-size: 13px;
   border: none;
   outline: none;
-  background-image: linear-gradient(to bottom right, #bee3f8, #3182cf);
+  background-image: linear-gradient(320deg, #3182CE 0%, #BEE3F8 100%);
   color: white;
   cursor: pointer;
   padding: 15px;
