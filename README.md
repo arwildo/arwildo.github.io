@@ -1,14 +1,14 @@
 # Portfolio Website
- :computer::white_circle::large_blue_circle: [arwildo.com](https://www.arwildo.com/)
+ :computer::white_circle::large_blue_circle: [arwildo.com](https://arwildo.com/)
 
 
 ## Preview
 <p align="center">
-  <img src="https://raw.githubusercontent.com/arwildo/arwildo.github.io/master/assets/images/arwildo-com.png?raw=true" alt="Website Preview"/>
+  <img src="https://raw.githubusercontent.com/arwildo/arwildo.github.io/master/assets/images/arwildo.png?raw=true" alt="Website Preview"/>
 </p>
     
 <p align="center">
-  <img src="https://raw.githubusercontent.com/arwildo/arwildo.github.io/master/assets/images/arwildo-com2.png?raw=true" alt="Website Preview"/>
+  <img src="https://raw.githubusercontent.com/arwildo/arwildo.github.io/master/assets/images/arwildo2.png?raw=true" alt="Website Preview"/>
 </p>
 
 
