@@ -6,10 +6,6 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/arwildo/arwildo.github.io/master/assets/images/arwildo.png?raw=true" alt="Website Preview"/>
 </p>
-    
-<p align="center">
-  <img src="https://raw.githubusercontent.com/arwildo/arwildo.github.io/master/assets/images/arwildo2.png?raw=true" alt="Website Preview"/>
-</p>
 
 
 ## Built With
