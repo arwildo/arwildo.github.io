@@ -1,5 +1,9 @@
 import React from 'react';
 
+// Get projects data
+const database = require('../db.json');
+console.log(database)
+
 function Projects() {
   return (
     <section className="relative">
@@ -27,87 +31,7 @@ function Projects() {
             <main className="w-full overflow-y-auto">
               <div className="px-6 grid grid-cols-4 lg:grid-cols-2 gap-8 lg:gap-16">
 
-                {/* Project card started */}
-                <div className="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col">
-                  <div className="bg-white rounded-lg mt-5">
-                    <img src={require("../images/akunter.png")} className="h-60 rounded-md shadow" alt="Akunter" />
-                  </div>
-                  <div className="">
-                    <div className="py-5 px-5">
-                      <span className="font-bold text-gray-800 text-xl">Akunter</span>
-                      <div className="flex items-center justify-between">
-                        <div className="text-gray-600 font-light">
-                          Full-stack DRRM (Django, React, Redux, MySQL) application to handle accounting and databases of small businesses. 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col">
-                  <div className="bg-white rounded-lg mt-5">
-                    <img src={require("../images/akunter.png")} className="h-60 rounded-md shadow" alt="Akunter" />
-                  </div>
-                  <div className="">
-                    <div className="py-5 px-5">
-                      <span className="font-bold text-gray-800 text-xl">Akunter</span>
-                      <div className="flex items-center justify-between">
-                        <div className="text-gray-600 font-light">
-                          Full-stack DRRM (Django, React, Redux, MySQL) application to handle accounting and databases of small businesses. 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col">
-                  <div className="bg-white rounded-lg mt-5">
-                    <img src={require("../images/akunter.png")} className="h-60 rounded-md shadow" alt="Akunter" />
-                  </div>
-                  <div className="">
-                    <div className="py-5 px-5">
-                      <span className="font-bold text-gray-800 text-xl">Akunter</span>
-                      <div className="flex items-center justify-between">
-                        <div className="text-gray-600 font-light">
-                          Full-stack DRRM (Django, React, Redux, MySQL) application to handle accounting and databases of small businesses. 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col">
-                  <div className="bg-white rounded-lg mt-5">
-                    <img src={require("../images/akunter.png")} className="h-60 rounded-md shadow" alt="Akunter" />
-                  </div>
-                  <div className="">
-                    <div className="py-5 px-5">
-                      <span className="font-bold text-gray-800 text-xl">Akunter</span>
-                      <div className="flex items-center justify-between">
-                        <div className="text-gray-600 font-light">
-                          Full-stack DRRM (Django, React, Redux, MySQL) application to handle accounting and databases of small businesses. 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col">
-                  <div className="bg-white rounded-lg mt-5">
-                    <img src={require("../images/akunter.png")} className="h-60 rounded-md shadow" alt="Akunter" />
-                  </div>
-                  <div className="">
-                    <div className="py-5 px-5">
-                      <span className="font-bold text-gray-800 text-xl">Akunter</span>
-                      <div className="flex items-center justify-between">
-                        <div className="text-gray-600 font-light">
-                          Full-stack DRRM (Django, React, Redux, MySQL) application to handle accounting and databases of small businesses. 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
+                {/* Project card */}
                 <div className="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col">
                   <div className="bg-white rounded-lg mt-5">
                     <img src={require("../images/akunter.png")} className="h-60 rounded-md shadow" alt="Akunter" />

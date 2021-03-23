@@ -13,8 +13,8 @@ function Footer() {
       <div className="container py-6 max-w-6xl mx-auto px-4 sm:px-6 border-t border-gray-200">
         <div className="flex flex-col items-center justify-between mt-6 md:flex-row">
           <div>
-            <a href="#" className="text-xl font-bold">
-              <img className="w-8" src={require("../images/logo.svg")} />
+            <a href="https://arwildo.com" className="text-xl font-bold">
+              <img className="w-8" src={require("../images/logo.svg")} alt="Arwildo" />
             </a>
           </div>
           <div className="-mx-4">

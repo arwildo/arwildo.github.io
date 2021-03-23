@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
-import Modal from '../utils/Modal';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaTwitter, FaGithub, FaLinkedin, FaDribbble } from 'react-icons/fa';
 
 function HeroHome() {
-
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   return (
     <section className="relative">
