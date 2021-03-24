@@ -22,19 +22,19 @@ function Footer() {
               {/* Social links */}
               <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
                 <li>
-                  <Link to="#" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Twitter">
+                  <a href="https://www.youtube.com/channel/UC8d7Kp-zXf6ZuSff043mjpg" target="_blank" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Twitter">
                     <FaYoutube className="m-2"/>
-                  </Link>
+                  </a>
                 </li>
                 <li className="ml-4">
-                  <Link to="#" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Github">
+                  <a href="https://www.instagram.com/arwildooo/" target="_blank" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Github">
                     <FaInstagram className="m-2"/>
-                  </Link>
+                  </a>
                 </li>
                 <li className="ml-4">
-                  <Link to="#" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Facebook">
+                  <a href="https://www.facebook.com/arwildo/" target="_blank" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Facebook">
                     <FaFacebookF className="m-2"/>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
