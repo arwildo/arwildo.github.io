@@ -12,7 +12,7 @@ class Projects extends Component {
     let projectList = database.map(item => {
 
       return(
-        <div className="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col" key={item.title}>
+        <div className="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col" key={item.title} data-aos="fade-up" data-aos-delay="250">
           <div className="bg-white rounded-lg mt-5">
             <img src={require("../images/" + item.img)} className="h-60 rounded-md shadow" alt={item.title} />
           </div>
@@ -52,7 +52,7 @@ class Projects extends Component {
           <div className="py-12 md:py-20">
 
               <main className="w-full overflow-y-auto">
-                <div className="px-6 grid grid-cols-4 lg:grid-cols-2 gap-8 lg:gap-16">
+                <div className="px-6 grid grid-cols-4 lg:grid-cols-2 gap-8 lg:gap-16 overflow-hidden">
 
                 { projectList }
 
