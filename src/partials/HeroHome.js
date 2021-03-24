@@ -83,9 +83,12 @@ function HeroHome() {
           <div>
             <div className="relative flex justify-center mb-8" data-aos="zoom-y-out" data-aos-delay="450">
               <div className="flex flex-col justify-center">
-                <img src={require('../images/hero-image.png')} width="768" height="432" alt="Skills" />
+                <img src={require('../images/hero-image.png')} width="768" height="432" alt="Animation" />
                 <div className="absolute inset-0 max-w-full mx-auto md:max-w-none h-auto">
+
                   {/* Rotating object animation */}
+                  <iframe title="Rotating Planet" className="w-full h-full" src="https://arwildo.com/iframes/rotating-planet" />
+
                 </div>
               </div>
             </div>

@@ -68,30 +68,3 @@ class Projects extends Component {
 }
 
 export default Projects;
-
-/*
-  // Get projects data
-  let database = require('../db.json');
-  database = database.data;
-
-  database.forEach(projectCard)
-
-  function projectCard(item) {
-    return (
-      <div className="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col">
-        <div className="bg-white rounded-lg mt-5">
-          <img src={require("../images/akunter.png")} className="h-60 rounded-md shadow" alt={item.title} />
-        </div>
-        <div className="py-5 px-5">
-          <span className="font-bold text-gray-800 text-xl">{item.title}</span>
-          <div className="flex items-center justify-between">
-            <div className="text-gray-600 font-light">
-              {item.desc}
-            </div>
-          </div>
-        </div>
-      </div>
-    )
- 
- }
-*/

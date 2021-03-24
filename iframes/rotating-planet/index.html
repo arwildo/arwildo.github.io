@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rotating Planet</title>
+  <style>
+    .planet {
+        width: 300px;
+        height: 300px;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 50%;
+        box-shadow: 0 0 20px 20px #BEE3F8 inset, 0 0 20px 2px #3182CE;
+    }
+
+    .planet:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: -20px -20px 50px 2px #1F1F1F inset;
+        border-radius: 50%;
+    }
+
+    .planet > div {
+        width: 200%;
+        height: 100%;
+        animation: spin 10s linear infinite;
+        background: url(./rotating-planet.png);
+        background-size: cover;
+    }
+    @keyframes spin{
+      0% { background-position-x: 0; } 
+      100% { background-position-x: -600px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="planet">
+    <div></div>
+  </div>
+</body>
+</html>
