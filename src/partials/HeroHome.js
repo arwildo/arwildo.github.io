@@ -87,7 +87,7 @@ function HeroHome() {
                 <div className="absolute inset-0 max-w-full mx-auto md:max-w-none h-auto">
 
                   {/* Rotating object animation */}
-                  <iframe title="Rotating Planet" className="w-full h-full" src="https://arwildo.com/iframes/rotating-planet" />
+                  <iframe title="Rotating Planet" className="w-full h-full" src="https://arwildo.com/code/iframes/rotating-planet/" />
 
                 </div>
               </div>
