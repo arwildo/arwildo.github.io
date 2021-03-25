@@ -17,13 +17,13 @@ class Projects extends Component {
 
           <div className="group relative">
             <img src={require("../images/" + item.img)} className="h-60 rounded-md shadow" alt={item.title} />
-            <div className="absolute bg-black rounded hover:bg-opacity-25 bg-opacity-0 w-full h-full top-0 flex items-center transition duration-500 ease-in-out justify-evenly">
+            <div className="absolute bg-black rounded hover:bg-opacity-25 bg-opacity-0 w-full h-full top-0 flex items-center transition duration-500 ease-in-out grid">
 
-              <a href={item.live} className="shadow mr-2 mt-2 bg-white btn-sm text-blue-500 dark:bg-gray-800 dark:text-blue-500 opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition" target="_blank" rel="noopener noreferrer">
+              <a href={item.live} className="shadow w-48 mx-auto bg-white hover:bg-gray-200 btn-sm text-blue-500 dark:bg-gray-800 dark:text-blue-500 opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition" target="_blank" rel="noopener noreferrer">
                 Live Demo <FaDesktop className="ml-2" />
               </a>
 
-              <a href={item.get} className="shadow mr-2 mt-2 bg-blue-500 btn-sm text-white dark:bg-gray-800 dark:text-blue-500 opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition" target="_blank" rel="noopener noreferrer">
+              <a href={item.get} className="shadow w-48 mx-auto bg-blue-500 hover:bg-blue-600 btn-sm text-white dark:bg-gray-800 dark:text-blue-500 opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition" target="_blank" rel="noopener noreferrer">
                 Get Code <FaArrowDown className="ml-2" />
               </a>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaComment } from 'react-icons/fa';
 
 function Header() {
 
@@ -22,6 +23,7 @@ function Header() {
               <li>
                 <Link to="/contact" className="bg-white btn-sm text-blue-500 hover:bg-blue-400 hover:text-white dark:bg-grey-800 dark:text-blue-500">
                   <span>Contact</span>
+                  <FaComment className="ml-2" />
                 </Link>
               </li>
             </ul>
