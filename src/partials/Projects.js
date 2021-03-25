@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FaDesktop, FaArrowDown } from 'react-icons/fa';
 
 // Get projects data
 let database = require('../db.json');
@@ -13,17 +14,31 @@ class Projects extends Component {
 
       return(
         <div className="col-span-4 sm:col-span-4 md:col-span-2 lg:col-span-1 xl:col-span-1 flex flex-col" key={item.title} data-aos="fade-up" data-aos-delay="250">
-          <div className="bg-white rounded-lg mt-5">
+
+          <div className="group relative">
             <img src={require("../images/" + item.img)} className="h-60 rounded-md shadow" alt={item.title} />
+            <div className="absolute bg-black rounded hover:bg-opacity-25 bg-opacity-0 w-full h-full top-0 flex items-center transition duration-500 ease-in-out justify-evenly">
+
+              <a href={item.live} className="shadow mr-2 mt-2 bg-white btn-sm text-blue-500 dark:bg-gray-800 dark:text-blue-500 opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition" target="_blank" rel="noopener noreferrer">
+                Live Demo <FaDesktop className="ml-2" />
+              </a>
+
+              <a href={item.get} className="shadow mr-2 mt-2 bg-blue-500 btn-sm text-white dark:bg-gray-800 dark:text-blue-500 opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition" target="_blank" rel="noopener noreferrer">
+                Get Code <FaArrowDown className="ml-2" />
+              </a>
+
+            </div>
           </div>
+
           <div className="py-5 px-5">
             <span className="font-bold text-gray-800 text-xl">{item.title}</span>
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mt-2">
               <div className="text-gray-600 font-light">
                 {item.desc}
               </div>
             </div>
           </div>
+
         </div>
       )
     })
