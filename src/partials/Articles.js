@@ -5,8 +5,8 @@ function Articles() {
     <section className="relative px-4">
 
       {/* Illustration behind content */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -mb-32" aria-hidden="true">
-        <svg width="1760" height="518" viewBox="0 0 1760 518" xmlns="http://www.w3.org/2000/svg">
+      <div className="absolute left-1/2 transform -translate-x-1/2 top-0 pointer-events-none -mb-32" aria-hidden="true">
+        <svg width="1760" height="1018" viewBox="0 0 1760 1018" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-02">
               <stop stopColor="#FFF" offset="0%" />
@@ -15,8 +15,9 @@ function Articles() {
             </linearGradient>
           </defs>
           <g transform="translate(0 -3)" fill="url(#illustration-02)" fillRule="evenodd">
-            <circle cx="1600" cy="158" r="128" />
-            <circle cx="238" cy="341" r="40" />
+            <circle cx="1390" cy="75" r="60" />
+            <circle cx="348" cy="258" r="30" />
+            <circle cx="398" cy="308" r="20" />
           </g>
         </svg>
       </div>

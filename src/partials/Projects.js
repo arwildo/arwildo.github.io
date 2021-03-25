@@ -57,8 +57,8 @@ class Projects extends Component {
               </linearGradient>
             </defs>
             <g transform="translate(0 -3)" fill="url(#illustration-02)" fillRule="evenodd">
-              <circle cx="1580" cy="158" r="110" />
-              <circle cx="188" cy="881" r="60" />
+              <circle cx="1360" cy="158" r="110" />
+              <circle cx="338" cy="658" r="60" />
             </g>
           </svg>
         </div>
