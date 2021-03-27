@@ -2,7 +2,7 @@ import React from 'react';
 
 function Certifications() {
   return (
-    <section className="relative px-4">
+    <section className="relative px-4 pb-16">
 
       {/* Illustration behind content */}
       <div className="absolute left-1/2 transform -translate-x-1/2 top-0 pointer-events-none -mb-32" aria-hidden="true">
@@ -43,7 +43,7 @@ function Certifications() {
             <div className="relative flex flex-col justify-center items-center max-w-sm mx-auto my-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
               <img src={require("../images/CERT-Android.jpg")} className="bg-gray-300 w-full rounded-lg shadow-md bg-cover bg-center" alt="Mastering Mobile Programming Android Certifications" />
               <div className="w-52 shadow bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
-                <div className="py-2 mx-4 text-center tracking-wide text-sm font-bold text-gray-800">Mastering Mobile Programming Android</div>
+                <div className="m-4 text-center tracking-wide text-sm font-bold text-gray-800">Mastering Mobile Programming Android</div>
                 <div className="bg-gray-100 items-center justify-between py-2 px-3 shadow-lg">
                   <div className="text-gray-600 text-sm font-light text-center">Skill Academy</div>
                 </div>
@@ -53,7 +53,7 @@ function Certifications() {
             <div className="relative flex flex-col justify-center items-center max-w-sm mx-auto my-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
               <img src={require("../images/CERT-UI.jpg")} className="bg-gray-300 w-full rounded-lg shadow-md bg-cover bg-center" alt="User Interface Fundametals Certifications" />
               <div className="w-52 shadow bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
-                <div className="py-2 mx-4 text-center tracking-wide text-sm font-bold text-gray-800">User Interface Fundametals</div>
+                <div className="m-4 text-center tracking-wide text-sm font-bold text-gray-800">User Interface Fundametals</div>
                 <div className="bg-gray-100 items-center justify-between py-2 px-3 shadow-lg">
                   <div className="text-gray-600 text-sm font-light text-center">Hacktiv8</div>
                 </div>

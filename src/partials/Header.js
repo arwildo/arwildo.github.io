@@ -1,8 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaComment } from 'react-icons/fa';
+import { Link, useLocation } from 'react-router-dom';
+import { FaComment, FaHome } from 'react-icons/fa';
 
 function Header() {
+
+  const location = useLocation().pathname;
+  console.log(location);
 
   return (
     <header className="relative w-full transition duration-300 ease-in-out">
@@ -21,10 +24,16 @@ function Header() {
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
+              {location === "/" ?
                 <Link to="/contact" className="bg-white btn-sm text-blue-500 hover:bg-blue-400 hover:text-white dark:bg-grey-800 dark:text-blue-500">
                   <span>Contact</span>
                   <FaComment className="ml-2" />
-                </Link>
+                </Link> :
+                <Link to="/" className="bg-white btn-sm text-blue-500 hover:bg-blue-400 hover:text-white dark:bg-grey-800 dark:text-blue-500">
+                  <span>Home</span>
+                  <FaHome className="ml-2" />
+                </Link> 
+              }
               </li>
             </ul>
 

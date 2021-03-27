@@ -4,7 +4,7 @@ import Header from '../partials/Header';
 import HeroHome from '../partials/HeroHome';
 import Experience from '../partials/Experience';
 import Projects from '../partials/Projects';
-import Articles from '../partials/Articles';
+import Certifications from '../partials/Certifications';
 import Footer from '../partials/Footer';
 
 function Home() {
@@ -21,7 +21,7 @@ function Home() {
         <HeroHome />
         <Experience />
         <Projects />
-        <Articles />
+        <Certifications />
 
       </main>
 
