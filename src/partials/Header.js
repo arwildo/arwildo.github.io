@@ -5,7 +5,6 @@ import { FaComment, FaHome } from 'react-icons/fa';
 function Header() {
 
   const location = useLocation().pathname;
-  console.log(location);
 
   return (
     <header className="relative w-full transition duration-300 ease-in-out">
