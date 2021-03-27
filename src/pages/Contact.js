@@ -1,9 +1,22 @@
-import React from 'react';
-//import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 import Header from '../partials/Header';
 
 function Contact() {
+
+  const [Name, setName] = useState('');
+  const [Email, setEmail] = useState('');
+  const [Message, setMessage] = useState('');
+
+  const submitValue = () => {
+      const frmdetails = {
+          'Name' : Name,
+          'Email' : Email,
+          'Message' : setMessage
+      }
+  }
+
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
 
@@ -27,23 +40,25 @@ function Contact() {
 
               {/* Form */}
               <div className="max-w-sm mx-auto">
-                <form>
+
+                <form action="https://app.99inbound.com/api/e/LGPUtNHV" method="POST">
+
                   <div className="flex flex-wrap -mx-3 mb-4">
                     <div className="w-full px-3">
                       <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="name">Name</label>
-                      <input id="name" type="text" className="form-input w-full text-gray-800" placeholder="Enter your name" />
+                      <input id="name" type="text" name="name" className="form-input w-full text-gray-800" placeholder="Enter your name" onChange={e => setName(e.target.value)} />
                     </div>
                   </div>
                   <div className="flex flex-wrap -mx-3 mb-4">
                     <div className="w-full px-3">
                       <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="email">Email</label>
-                      <input id="email" type="email" className="form-input w-full text-gray-800" placeholder="Enter your email address" />
+                      <input id="email" type="email" name="email" className="form-input w-full text-gray-800" placeholder="Enter your email address" onChange={e => setEmail(e.target.value)} />
                     </div>
                   </div>
                   <div className="flex flex-wrap -mx-3 mb-4">
                     <div className="w-full px-3">
                       <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="password">Message</label>
-                      <textarea id="message" type="message" className="form-input w-full text-gray-800" placeholder="Enter you message" />
+                      <textarea id="message" type="message" name="message" className="form-input w-full text-gray-800" placeholder="Enter you message" onChange={e => setMessage(e.target.value)}/>
                     </div>
                   </div>
                   <div className="flex flex-wrap -mx-3 mt-6">
@@ -51,7 +66,9 @@ function Contact() {
                       <button className="btn text-white bg-blue-500 hover:bg-blue-600 w-full">Send</button>
                     </div>
                   </div>
+
                 </form>
+
               </div>
 
             </div>
