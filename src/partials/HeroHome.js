@@ -29,18 +29,26 @@ function HeroHome() {
         <div className="pt-16 pb-12 md:pb-36">
 
           {/* Section header */}
-          <div className="flex mx-5">
+          <div className="flex">
 
             {/* Left section */}
             <div className="w-1/2">
               <div className="text-left pb-12 md:pb-16 mt-16">
-                <h1 className="h3 font-bold leading-tighter tracking-tighter mb-4 dark:text-gray-200" data-aos="zoom-y-out">Arwildo Belekubun.</h1>
+                <h1 className="h3 font-bold leading-tighter tracking-tighter mb-4 dark:text-gray-200 block sm:hidden" data-aos="zoom-y-out">Arwildo.</h1>
+                <h1 className="h3 font-bold leading-tighter tracking-tighter mb-4 dark:text-gray-200 hidden sm:block" data-aos="zoom-y-out">Arwildo Belekubun.</h1>
                 <div className="max-w-3xl mx-auto">
 
-                  <p className="text-lg text-gray-600 mb-4" >
+                  {/* Mobile */}
+                  <p className="text-md sm:text-lg text-justify text-gray-600 mb-4 hidden sm:block" >
                     Hello, my name is Arwildo. <br />
                     I like to train <span className="text-blue-500">Deep Neural Nets</span> on large<br />
                     datasets and build <span className="text-blue-500">Web Apps</span>.
+                  </p>
+
+                  {/* Desktop */}
+                  <p className="text-justify block sm:hidden text-gray-600 mb-4" >
+                    I like to train <br /><span className="text-blue-500">Deep Neural Nets</span> <br />on large
+                    datasets <br />and build <span className="text-blue-500">Web Apps</span>.
                   </p>
 
                   {/* Social links */}
@@ -73,7 +81,7 @@ function HeroHome() {
 
             {/* Right section */}
             <div className="w-1/2">
-              <img className="mx-auto float-right" data-aos="zoom-y-out" data-aos-delay="150" src={require('../images/profile-image.svg')} width="300" alt="Arwildo Profile" />
+              <img className="mt-6 sm:mt-0 mx-auto float-right" data-aos="zoom-y-out" data-aos-delay="150" src={require('../images/profile-image.svg')} width="300" alt="Arwildo Profile" />
             </div>
 
           </div>
