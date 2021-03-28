@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 import Header from '../partials/Header';
 
@@ -11,11 +11,13 @@ function Contact() {
   const [Email, setEmail] = useState('');
   const [Message, setMessage] = useState('');
 
+  // eslint-disable-next-line
   const submitValue = () => {
+  // eslint-disable-next-line
       const frmdetails = {
           'Name' : Name,
           'Email' : Email,
-          'Message' : setMessage
+          'Message' : Message
       }
   }
 
