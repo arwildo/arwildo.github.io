@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "11c1873791083393ff7467279f3b3df3",
+    "revision": "d2275197edba4956b268738d1af9054d",
     "url": "/index.html"
   },
   {
-    "revision": "c52a3726cdf949ed7e24",
+    "revision": "964d6353db9ab6ffd4e7",
     "url": "/static/css/main.9dcdc7ea.chunk.css"
   },
   {
@@ -16,20 +16,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.7d22ae97.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c52a3726cdf949ed7e24",
-    "url": "/static/js/main.1cfb1ba4.chunk.js"
+    "revision": "964d6353db9ab6ffd4e7",
+    "url": "/static/js/main.4b3c32e4.chunk.js"
   },
   {
     "revision": "916873b4cb6f6dec2ebf",
     "url": "/static/js/runtime-main.eade1188.js"
   },
   {
-    "revision": "8cfca33ba8e903ad46a26a91eb9b2268",
-    "url": "/static/media/CERT-Android.8cfca33b.jpg"
+    "revision": "071f05d07757a6e05cd912ea1baefdfc",
+    "url": "/static/media/CERT-Android.071f05d0.jpg"
   },
   {
-    "revision": "c029504b82e95a43e7f2c59414dad3f3",
-    "url": "/static/media/CERT-UI.c029504b.jpg"
+    "revision": "6cb410c77b8b8785d897942eb28813e1",
+    "url": "/static/media/CERT-UI.6cb410c7.jpg"
   },
   {
     "revision": "829012af195c90c00bac2953653768a8",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/akunter.ce90940b.png"
   },
   {
-    "revision": "8b1add4a358b2bb1ffac652d623404ee",
-    "url": "/static/media/arwildo.8b1add4a.png"
+    "revision": "8b548cc38bf4427f956896e3005f3a70",
+    "url": "/static/media/arwildo.8b548cc3.png"
   },
   {
     "revision": "ccecaa4e648c49f3e33b33ec5950d305",
@@ -56,15 +56,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/profile-image.62c8c798.svg"
   },
   {
-    "revision": "39eeab10e9db9beb310b0dafa195e39e",
-    "url": "/static/media/profile.39eeab10.png"
+    "revision": "a41cfb7228425b57cfe0c897f84545db",
+    "url": "/static/media/profile.a41cfb72.png"
   },
   {
     "revision": "ec18639c07c0e77040515851d9d0a96b",
     "url": "/static/media/space-view.ec18639c.png"
   },
   {
-    "revision": "a1cd052fe22afca8ae1fe31894bf0094",
-    "url": "/static/media/textul.a1cd052f.png"
+    "revision": "6b674f52cbcc229d8c2ff2b3058515bf",
+    "url": "/static/media/textul.6b674f52.png"
   }
 ]);
