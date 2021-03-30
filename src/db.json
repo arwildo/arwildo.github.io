@@ -24,7 +24,7 @@
     },
     {
       "title" : "Textul",
-      "img" : "textul.jpg",
+      "img" : "textul.png",
       "desc" : "Web App for text manipulation design with Figma builds with React. Convert text to uppercase, convert text to lowercase, capitalize all the first letters on every word, reverse the text from back to front and etc.",
       "get" : "https://github.com/arwildo/textul",
       "live" : "https://arwildo.com/textul"
