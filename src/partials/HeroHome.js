@@ -81,7 +81,7 @@ function HeroHome() {
 
             {/* Right section */}
             <div className="w-1/2">
-              <img className="mt-6 sm:mt-0 mx-auto float-right" data-aos="zoom-y-out" data-aos-delay="150" src={require('../images/profile-image.svg')} width="300" alt="Arwildo Profile" />
+              <img className="mt-6 sm:mt-0 mx-auto float-right w-52" data-aos="zoom-y-out" data-aos-delay="150" src={require('../images/profile-image.svg')} width="300" alt="Arwildo Profile" />
             </div>
 
           </div>

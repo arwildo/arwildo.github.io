@@ -6,10 +6,10 @@
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="scale(0.0025641)"/>
 </pattern>
-<linearGradient id="paint0_linear" x1="125.455" y1="-2.95816" x2="447.479" y2="681.343" gradientUnits="userSpaceOnUse">
-<stop offset="0.1875" stop-color="#3182CE"/>
-<stop offset="0.536458" stop-color="#4299E1"/>
-<stop offset="1" stop-color="#BEE3F8" stop-opacity="0"/>
+<linearGradient id="paint0_linear" x1="320" y1="-65.5" x2="454" y2="595" gradientUnits="userSpaceOnUse">
+<stop offset="0.1875" stop-color="#BEE3F8"/>
+<stop offset="0.677083" stop-color="#4299E1"/>
+<stop offset="0.854167" stop-color="#3182CE"/>
 </linearGradient>
 <linearGradient id="paint1_linear" x1="64.6143" y1="-39.0751" x2="334.82" y2="387.941" gradientUnits="userSpaceOnUse">
 <stop offset="0.494792" stop-color="white"/>
