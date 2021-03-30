@@ -33,7 +33,10 @@ class Projects extends Component {
           </div>
 
           <div className="p-5">
-            <span className="font-bold text-gray-800 text-xl">{item.title}</span>
+            <div className="flex">
+              <img className="w-6 h-6 mr-4" src={require("../images/" + item.icon)} alt={item.title + " Icon"} />
+              <span className="font-bold text-gray-800 text-xl">{item.title}</span>
+            </div>
             <div className="flex items-center justify-between mt-2">
               <div className="text-gray-600 font-light">
                 {item.desc}
