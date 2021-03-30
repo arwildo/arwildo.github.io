@@ -11,7 +11,7 @@
     {
       "title" : "Portfolio",
       "img" : "arwildo.png",
-      "desc" : "Portfolio Site to view personal projects. Driven by a clean UI theme design with figma built with react and tailwind.",
+      "desc" : "Portfolio Site to view personal projects. Driven by a clean UI theme, design with Figma built with React.",
       "get" : "https://github.com/arwildo/arwildo.github.io",
       "live" : "https://arwildo.com/"
     },
