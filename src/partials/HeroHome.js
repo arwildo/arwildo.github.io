@@ -38,14 +38,14 @@ function HeroHome() {
                 <h1 className="h3 font-bold leading-tighter tracking-tighter mb-4 dark:text-gray-200 hidden sm:block" data-aos="zoom-y-out">Arwildo Belekubun.</h1>
                 <div className="max-w-3xl mx-auto">
 
-                  {/* Mobile */}
+                  {/* Desktop */}
                   <p className="text-md sm:text-lg text-justify text-gray-600 mb-4 hidden sm:block" >
                     Hello, my name is Arwildo. <br />
                     I like to train <span className="text-blue-500">Deep Neural Nets</span> on large<br />
                     datasets and build <span className="text-blue-500">Web Apps</span>.
                   </p>
 
-                  {/* Desktop */}
+                  {/* Mobile */}
                   <p className="text-justify block sm:hidden text-gray-600 mb-4" >
                     I like to train <br /><span className="text-blue-500">Deep Neural Nets</span> <br />on large
                     datasets <br />and build <span className="text-blue-500">Web Apps</span>.
@@ -54,22 +54,22 @@ function HeroHome() {
                   {/* Social links */}
                   <ul className="flex mb-4 md:order-1 md:mb-0">
                     <li>
-                      <a href="https://twitter.com/arwildo" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white dark:text-blue-500 dark:bg-gray-800 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Twitter">
+                      <a href="https://twitter.com/arwildo" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white dark:text-blue-500 dark:bg-gray-800 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Twitter" data-aos="zoom-y-out" data-aos-delay="50">
                         <FaTwitter className="m-2" />
                       </a>
                     </li>
                     <li className="ml-4">
-                      <a href="https://github.com/arwildo" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white dark:text-blue-500 dark:bg-gray-800 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Github">
+                      <a href="https://github.com/arwildo" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white dark:text-blue-500 dark:bg-gray-800 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Github" data-aos="zoom-y-out" data-aos-delay="150">
                         <FaGithub className="m-2" />
                       </a>
                     </li>
                     <li className="ml-4">
-                      <a href="https://dribbble.com/arwildo" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white dark:text-blue-500 dark:bg-gray-800 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Dribbble">
+                      <a href="https://dribbble.com/arwildo" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white dark:text-blue-500 dark:bg-gray-800 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Dribbble" data-aos="zoom-y-out" data-aos-delay="350">
                         <FaDribbble className="m-2" />
                       </a>
                     </li>
                     <li className="ml-4">
-                      <a href="https://www.linkedin.com/in/arwildo" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white dark:text-blue-500 dark:bg-gray-800 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Dribbble">
+                      <a href="https://www.linkedin.com/in/arwildo" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white dark:text-blue-500 dark:bg-gray-800 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Dribbble" data-aos="zoom-y-out" data-aos-delay="500">
                         <FaLinkedin className="m-2" />
                       </a>
                     </li>
@@ -94,7 +94,7 @@ function HeroHome() {
                 <div className="absolute inset-0 max-w-full mx-auto md:max-w-none h-auto">
 
                   {/* Rotating object animation */}
-                  <iframe title="Rotating Planet" className="w-full h-full" src="https://arwildo.com/iframes/rotating-planet/" />
+                  <iframe title="Rotating Planet" className="w-full h-full" src="https://arwildo.com/iframes/rotating-planet/" data-aos="zoom-y-in" data-aos-delay="1000" />
 
                 </div>
               </div>

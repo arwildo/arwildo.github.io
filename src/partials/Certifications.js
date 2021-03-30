@@ -40,7 +40,7 @@ function Certifications() {
         <main className="w-full overflow-y-auto">
           <div className="px-6 grid grid-cols-1 md:grid-cols-2 gap-8 overflow-hidden">
 
-            <div className="relative flex flex-col justify-center items-center max-w-sm mx-auto my-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+            <div className="relative flex flex-col justify-center items-center max-w-sm mx-auto my-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"data-aos="zoom-y-in" data-aos-delay="300" >
               <img src={require("../images/CERT-Android.jpg")} className="bg-gray-300 w-full rounded-lg shadow-md bg-cover bg-center" alt="Mastering Mobile Programming Android Certifications" />
               <div className="w-52 shadow bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
                 <div className="m-4 text-center tracking-wide text-sm font-bold text-gray-800">Mastering Mobile Programming Android</div>
@@ -50,7 +50,7 @@ function Certifications() {
               </div>
             </div>
 
-            <div className="relative flex flex-col justify-center items-center max-w-sm mx-auto my-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+            <div className="relative flex flex-col justify-center items-center max-w-sm mx-auto my-8 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"data-aos="zoom-y-in" data-aos-delay="600" >
               <img src={require("../images/CERT-UI.jpg")} className="bg-gray-300 w-full rounded-lg shadow-md bg-cover bg-center" alt="User Interface Fundametals Certifications" />
               <div className="w-52 shadow bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
                 <div className="m-4 text-center tracking-wide text-sm font-bold text-gray-800">User Interface Fundametals</div>
