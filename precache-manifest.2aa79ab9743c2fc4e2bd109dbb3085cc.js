@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3bb421e28311f41a7cab2c27cfde7734",
+    "revision": "efabfac3d00768c443d13eaae0c23229",
     "url": "/index.html"
   },
   {
-    "revision": "462a4a194a3e88ef6f0a",
+    "revision": "54a3855debfb30473b02",
     "url": "/static/css/main.9dcdc7ea.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.7d22ae97.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "462a4a194a3e88ef6f0a",
-    "url": "/static/js/main.6ffc9740.chunk.js"
+    "revision": "54a3855debfb30473b02",
+    "url": "/static/js/main.824aec5b.chunk.js"
   },
   {
     "revision": "916873b4cb6f6dec2ebf",
@@ -64,8 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/android-chrome-256x256.7d4972b9.png"
   },
   {
-    "revision": "5934d55b01c178d29ccb3ac467d3f3cf",
-    "url": "/static/media/arwildo.5934d55b.png"
+    "revision": "7b07618776c17a9176f58b6e620d1c6d",
+    "url": "/static/media/arwildo.7b076187.png"
   },
   {
     "revision": "cb2bbbcf9012843db96c4012b1fb69bf",
