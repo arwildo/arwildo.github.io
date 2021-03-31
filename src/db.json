@@ -13,7 +13,7 @@
       "title" : "Portfolio",
       "img" : "arwildo.png",
       "icon" : "arwildo-icon.png",
-      "desc" : "Portfolio Site to view personal projects. Driven by a clean UI theme, design with Figma built with React.",
+      "desc" : "Portfolio website to showcase personal projects. Driven by a clean UI theme, design with Figma built with React.",
       "get" : "https://github.com/arwildo/arwildo.github.io",
       "live" : "https://arwildo.com/"
     },
