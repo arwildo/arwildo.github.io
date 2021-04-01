@@ -3,7 +3,10 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from "react-router-dom";
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import ReactGA from 'react-ga';
 
+// Google Analytics
+ReactGA.initialize('UA-51659765-2');
 
 ReactDOM.render(
   <React.StrictMode>
