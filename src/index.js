@@ -7,6 +7,7 @@ import ReactGA from 'react-ga';
 
 // Google Analytics
 ReactGA.initialize('UA-51659765-2');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <React.StrictMode>
