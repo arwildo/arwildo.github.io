@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTwitter, FaGithub, FaLinkedin, FaDribbble } from 'react-icons/fa';
+import { FaYoutube, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 function HeroHome() {
 
@@ -41,8 +41,8 @@ function HeroHome() {
                   {/* Desktop */}
                   <p className="text-md sm:text-lg text-justify text-gray-600 mb-4 hidden sm:block" >
                     Hello, my name is Arwildo. <br />
-                    I like to train <span className="text-blue-500">Deep Neural Nets</span> on large<br />
-                    datasets and build <span className="text-blue-500">Web Apps</span>.
+                    I like love to <span className="text-blue-500">code</span> and <span className="text-blue-500">design</span>,<br />
+                    I also create <span className="text-blue-500">videos</span> online.
                   </p>
 
                   {/* Mobile */}
@@ -54,18 +54,18 @@ function HeroHome() {
                   {/* Social links */}
                   <ul className="flex mb-4 md:order-1 md:mb-0">
                     <li>
-                      <a href="https://twitter.com/arwildo" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white dark:text-blue-500 dark:bg-gray-800 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Twitter" data-aos="zoom-y-out" data-aos-delay="50">
-                        <FaTwitter className="m-2" />
+                      <a href="https://www.instagram.com/arwildooo/" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Github">
+                        <FaInstagram className="m-2"/>
+                      </a>
+                    </li>
+                    <li className="ml-4">
+                      <a href="https://www.youtube.com/channel/UC8d7Kp-zXf6ZuSff043mjpg" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Twitter">
+                        <FaYoutube className="m-2"/>
                       </a>
                     </li>
                     <li className="ml-4">
                       <a href="https://github.com/arwildo" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white dark:text-blue-500 dark:bg-gray-800 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Github" data-aos="zoom-y-out" data-aos-delay="150">
                         <FaGithub className="m-2" />
-                      </a>
-                    </li>
-                    <li className="ml-4">
-                      <a href="https://dribbble.com/arwildo" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white dark:text-blue-500 dark:bg-gray-800 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Dribbble" data-aos="zoom-y-out" data-aos-delay="350">
-                        <FaDribbble className="m-2" />
                       </a>
                     </li>
                     <li className="ml-4">
