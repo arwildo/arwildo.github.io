@@ -41,7 +41,7 @@ function HeroHome() {
                   {/* Desktop */}
                   <p className="text-md sm:text-lg text-justify text-gray-600 mb-4 hidden sm:block" >
                     Hello, my name is Arwildo. <br />
-                    I like love to <span className="text-blue-500">code</span> and <span className="text-blue-500">design</span>,<br />
+                    I like to <span className="text-blue-500">code</span> and <span className="text-blue-500">design</span>,<br />
                     I also create <span className="text-blue-500">videos</span> online.
                   </p>
 
