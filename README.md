@@ -1,50 +1,36 @@
-<p align=center><a href="https://arwildo.com/"><img src="https://arwildo.com/logo.png" width="32"></img></a></p> 
-<p align=center> 
-  <img src="https://raw.githubusercontent.com/arwildo/arwildo.github.io/master/src/images/arwildo.png" width="800">
-</p>
-<p align=center> 
-  <a href="https://arwildo.com/"><img src="https://arwildo.com/logo.png" width="16"></img> Arwildo</a>
- </p>
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-<p style="text-align: justify;">
-A responsive React portfolio website to view personal projects. Design with Figma built with React and Tailwind.
-</p>
+## Getting Started
 
+First, run the development server:
 
-### Built With
-
-* [React](https://reactjs.org/) - The JavaScript framework
-* [Tailwind](https://tailwindcss.com/) - CSS framework
-* [Sass](https://sass-lang.com/) - CSS preprocessor
-* [AOS](https://michalsnik.github.io/aos/) - Animate on scroll library
-
-
-### Installing
-
-1. Clone the repo
-
-```
-git clone https://github.com/arwildo/arwildo.github.io
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-2. Run npm install inside project root
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```
-npm install
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-3. Start the server
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-```
-npm run start
-```
+## Learn More
 
+To learn more about Next.js, take a look at the following resources:
 
-### License
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+## Deploy on Vercel
 
-### Support
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-<a href="https://www.buymeacoffee.com/Arwildo " target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/white_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
