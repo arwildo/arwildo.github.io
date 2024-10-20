@@ -48,10 +48,10 @@ export default function LandingPage() {
                 transition={{ duration: 0.5 }}
               >
                 <h1 className="text-5xl md:text-7xl font-black text-carcoal">
-                  <a href="/contact">Arwildo</a>
+                  Arwildo
                 </h1>
                 <p className="text-md text-gray-600 font-normal tracking-widest">
-                  <a href="/contact">SOFTWARE</a>
+                  SOFTWARE
                 </p>
               </motion.div>
             </div>
