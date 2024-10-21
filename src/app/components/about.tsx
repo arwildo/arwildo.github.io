@@ -28,7 +28,15 @@ export default function AboutSection() {
           <div className="w-32 h-32 rounded-full border-2 border-gray-900 overflow-hidden mx-auto mb-2">
             <Image src="/images/arwildo.jpeg" alt="Arwildo" width={150} height={150} className="object-cover" />
           </div>
-          <h2 className="text-2xl font-bold text-center mb-8 text-gray-900">About</h2>
+          <h2 className="text-2xl font-bold text-center mb-4 text-gray-900">About</h2>
+          <a href="/docs/arwldo_software_engineer_cv.pdf" download className="inline-block bg-gray-400 text-white text-sm font-semibold py-1 px-2 rounded-xl hover:bg-gray-700 transition duration-300 ease-in-out mb-4">
+            <div className="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+              <span className="ml-2">Download CV</span>
+            </div>
+          </a>
           <p className="text-md text-gray-600 mb-8 px-4 md:px-8 text-justify">
             I am a software engineer with 6 years of professional experience in developing software solutions for businesses, clinics, schools, hospitals, and other institutions.
             My work spans across various industries, applying innovative programming practices to deliver tailored, efficient, and scalable applications.
