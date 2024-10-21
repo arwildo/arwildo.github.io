@@ -16,6 +16,17 @@ const customers = [
   { name: 'Other Hospital and Clinic', logo: '/images/clients/other-hospital-clinic.png' },
 ]
 
+const photos = [
+  '/images/photos/photo1.jpg',
+  '/images/photos/photo2.jpg',
+  '/images/photos/photo3.jpg',
+  '/images/photos/photo4.jpg',
+  '/images/photos/photo5.jpg',
+  '/images/photos/photo6.jpg',
+  '/images/photos/photo7.jpg',
+  '/images/photos/photo8.jpg',
+]
+
 const CustomerLogo = ({ name, logo, size }: { name: string; logo: string; size: number }) => {
   const [isHovered, setIsHovered] = useState(false)
 
@@ -32,6 +43,41 @@ const CustomerLogo = ({ name, logo, size }: { name: string; logo: string; size: 
         height={size / 2.5}
         className={`transition-all duration-300 ${isHovered ? 'filter-none' : 'filter grayscale'}`}
       />
+    </div>
+  )
+}
+
+const PhotoCarousel = () => {
+  return (
+    <div className="overflow-hidden w-full mt-8 relative">
+      <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
+      <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
+      <motion.div
+        className="flex"
+        animate={{
+          x: [0, -100 * photos.length],
+        }}
+        transition={{
+          x: {
+            repeat: Infinity,
+            repeatType: "loop",
+            duration: 20,
+            ease: "linear",
+          },
+        }}
+      >
+        {[...photos, ...photos].map((photo, index) => (
+          <div key={index} className="flex-shrink-0 w-64 h-44 mx-4">
+            <Image
+              src={photo}
+              alt={`Customer photo ${index + 1}`}
+              width={256}
+              height={176}
+              className="rounded-lg object-cover w-64 h-44"
+            />
+          </div>
+        ))}
+      </motion.div>
     </div>
   )
 }
@@ -53,7 +99,7 @@ export default function CustomerSection() {
     <section className="bg-white py-8 md:py-16 relative">
       <div className="container mx-auto px-4 py-10 relative z-10">
         <h2 className="text-2xl font-bold text-center mb-12 text-gray-900">Clients</h2>
-        <div ref={ref} className="flex flex-wrap justify-center items-center gap-x-8 md:gap-x-16 gap-y-12 mb-8">
+        <div ref={ref} className="flex flex-wrap justify-center items-center gap-x-8 md:gap-x-16 gap-y-12 mb-4">
           {customers.slice(0, 8).map((customer, index) => (
             <motion.div
               key={customer.name}
@@ -70,6 +116,7 @@ export default function CustomerSection() {
           ))}
         </div>
       </div>
+      <PhotoCarousel />
     </section>
   )
 }
