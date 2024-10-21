@@ -5,10 +5,36 @@ import Link from 'next/link';
 
 export default function LandingPage() {
   const [mounted, setMounted] = useState(false);
+  const [currentRole, setCurrentRole] = useState(0);
+  const [displayedText, setDisplayedText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const roles = ['SOFTWARE ENGINEER', 'WEB DEVELOPER', 'DESIGNER', 'CONTENT CREATOR'];
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+    const typewriterEffect = () => {
+      const currentWord = roles[currentRole];
+      const updateText = () => {
+        if (!isDeleting && displayedText !== currentWord) {
+          setDisplayedText(currentWord.substring(0, displayedText.length + 1));
+        } else if (isDeleting && displayedText !== '') {
+          setDisplayedText(displayedText.substring(0, displayedText.length - 1));
+        } else if (displayedText === currentWord) {
+          setTimeout(() => setIsDeleting(true), 1000);
+        } else if (displayedText === '') {
+          setIsDeleting(false);
+          setCurrentRole((prev) => (prev + 1) % roles.length);
+        }
+      };
+
+      const typingSpeed = isDeleting ? 50 : 150;
+      setTimeout(updateText, typingSpeed);
+    };
+
+    if (mounted) {
+      typewriterEffect();
+    }
+  }, [mounted, currentRole, displayedText, isDeleting]);
 
   if (!mounted) {
     return null;
@@ -50,9 +76,10 @@ export default function LandingPage() {
                 <h1 className="text-5xl md:text-7xl font-black text-carcoal">
                   Arwildo
                 </h1>
-                <p className="text-md text-gray-600 font-normal tracking-widest">
-                  SOFTWARE
-                </p>
+                <div className="text-md text-gray-600 font-normal tracking-widest h-6 flex items-center justify-center md:justify-start">
+                  <span>{displayedText}</span>
+                  <span className="w-1 h-5 bg-gray-600 ml-1 animate-ping"></span>
+                </div>
               </motion.div>
             </div>
           </div>
