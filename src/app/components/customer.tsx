@@ -1,8 +1,9 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const customers = [
   { name: 'Bunda Pengharapan Hospital', logo: '/images/clients/bunda-pengharapan-hospital.png' },
@@ -36,17 +37,33 @@ const CustomerLogo = ({ name, logo, size }: { name: string; logo: string; size: 
 }
 
 export default function CustomerSection() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
+
   return (
     <section className="bg-white py-8 md:py-16 relative">
       <div className="container mx-auto px-4 py-10 relative z-10">
         <h2 className="text-2xl font-bold text-center mb-12 text-gray-900">Clients</h2>
-        <div className="flex flex-wrap justify-center items-center gap-x-8 md:gap-x-16 gap-y-12 mb-8">
+        <div ref={ref} className="flex flex-wrap justify-center items-center gap-x-8 md:gap-x-16 gap-y-12 mb-8">
           {customers.slice(0, 8).map((customer, index) => (
             <motion.div
               key={customer.name}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.4 }} // Delay for each customer logo
+              initial="hidden"
+              animate={controls}
+              variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: 20 }
+              }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
             >
               <CustomerLogo {...customer} size={180} />
             </motion.div>
