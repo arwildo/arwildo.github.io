@@ -30,6 +30,12 @@ const products = [
     images: ['/images/projects/textul.jpg'],
     link: 'https://arwildo.com/textul',
   },
+  {
+    title: 'TradeTul',
+    description: 'Web App for Calculate Risk Reward when Trading. Build for Cypto Company with React and Tailwind.',
+    images: ['/images/projects/tradetul.jpg'],
+    link: 'https://arwildo.com/tradetul',
+  },
 ]
 
 interface Product {
