@@ -6,25 +6,26 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const customers = [
-  { name: 'Bunda Pengharapan Hospital', logo: '/images/clients/bunda-pengharapan-hospital.png' },
-  { name: 'Harmoni Clinic', logo: '/images/clients/harmoni-clinic.png' },
-  { name: 'Heart & Surgery Hospital', logo: '/images/clients/heart-surgery-hospital.png' },
-  { name: 'Santa Lusia Clinic', logo: '/images/clients/santa-lusia-clinic.png' },
-  { name: 'Santa Elisabeth Pharmacy', logo: '/images/clients/santa-elisabeth-pharmacy.png' },
-  { name: 'Doctor Adolf Practice\'s', logo: '/images/clients/doctor-adolf-practice.png' },
-  { name: 'Mitra Keluarga Clinic', logo: '/images/clients/mitra-keluarga-clinic.png' },
-  { name: 'Other Hospital and Clinic', logo: '/images/clients/other-hospital-clinic.png' },
+  { name: 'Bunda Pengharapan Hospital', logo: '/images/clients/bunda-pengharapan-hospital.webp' },
+  { name: 'Harmoni Clinic', logo: '/images/clients/harmoni-clinic.webp' },
+  { name: 'Heart & Surgery Hospital', logo: '/images/clients/heart-surgery-hospital.webp' },
+  { name: 'Santa Lusia Clinic', logo: '/images/clients/santa-lusia-clinic.webp' },
+  { name: 'Santa Elisabeth Pharmacy', logo: '/images/clients/santa-elisabeth-pharmacy.webp' },
+  { name: 'Doctor Adolf Practice\'s', logo: '/images/clients/doctor-adolf-practice.webp' },
+  { name: 'Mitra Keluarga Clinic', logo: '/images/clients/mitra-keluarga-clinic.webp' },
+  { name: 'Other Hospital and Clinic', logo: '/images/clients/other-hospital-clinic.webp' },
 ]
 
 const photos = [
-  '/images/photos/photo1.jpg',
-  '/images/photos/photo2.jpg',
-  '/images/photos/photo3.jpg',
-  '/images/photos/photo4.jpg',
-  '/images/photos/photo5.jpg',
-  '/images/photos/photo6.jpg',
-  '/images/photos/photo7.jpg',
-  '/images/photos/photo8.jpg',
+  '/images/photos/photo1.webp',
+  '/images/photos/photo2.webp',
+  '/images/photos/photo3.webp',
+  '/images/photos/photo4.webp',
+  '/images/photos/photo5.webp',
+  '/images/photos/photo6.webp',
+  '/images/photos/photo7.webp',
+  '/images/photos/photo8.webp',
+  '/images/photos/photo9.webp',
 ]
 
 const CustomerLogo = ({ name, logo, size }: { name: string; logo: string; size: number }) => {

@@ -46,7 +46,7 @@ export default function LandingPage() {
         {/* Background Image */}
         <div className="absolute top-0 right-0 h-auto md:w-1/2 overflow-visible">
           <img 
-            src="images/fly-objects.png" 
+            src="images/fly-objects.webp" 
             alt="Background" 
             className="w-full h-full object-cover object-center"
           />
@@ -57,7 +57,7 @@ export default function LandingPage() {
           <div className="container mx-auto px-4">
             <div className="flex justify-between items-center py-4">
               <Link href="/">
-                <img src="android-chrome-192x192.png" alt="Custom Khanza, Modifikasi Khanza, Programming, Coding, Java, Javascript, React, Tailwind" className="h-12 mx-6 my-4" />
+                <img src="logo.webp" alt="Custom Khanza, Modifikasi Khanza, Programming, Coding, Java, Javascript, React, Tailwind" className="h-12 mx-6 my-4" />
               </Link>
             </div>
           </div>

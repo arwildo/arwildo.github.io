@@ -9,31 +9,31 @@ const products = [
   {
     title: 'Akunter',
     description: 'Full-stack DRRM (Django, React, Redux, MySQL) application to handle accounting and databases of small businesses.',
-    images: ['/images/projects/akunter.png'],
+    images: ['/images/projects/akunter.webp'],
     link: 'https://arwildo.com/akunter',
   },
   {
     title: 'SpaceV',
     description: 'React app to explore space objects like the moon, mars, and the night sky through an interactive map view. Built with NASA and Google APIs.',
-    images: ['/images/projects/space-view.png'],
+    images: ['/images/projects/space-view.webp'],
     link: 'https://arwildo.com/space-view',
   },
   {
     title: 'BlueO',
     description: 'Portfolio website to showcase personal projects. Driven by a clean UI theme, design with Figma built with React.',
-    images: ['/images/projects/blue-bubble-portfolio.png'],
+    images: ['/images/projects/blue-bubble-portfolio.webp'],
     link: 'https://arwildo.com/blue-bubble',
   },
   {
     title: 'TexTul',
     description: 'Web App for text manipulation. Design with Figma builds with React.',
-    images: ['/images/projects/textul.jpg'],
+    images: ['/images/projects/textul.webp'],
     link: 'https://arwildo.com/textul',
   },
   {
     title: 'TradeTul',
     description: 'Web App for Calculate Risk Reward when Trading. Build for Cypto Company with React and Tailwind.',
-    images: ['/images/projects/tradetul.jpg'],
+    images: ['/images/projects/tradetul.webp'],
     link: 'https://arwildo.com/tradetul',
   },
 ]

@@ -2,10 +2,10 @@ import Image from 'next/image'
 import { Youtube, Github, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react'
 
 const certificates = [
-  { name: 'Mastering Mobile Programming Android', issuer: 'Skill Academy', image: '/images/sertifikat-programming-android-java.jpg?height=350&width=400' },
-  { name: 'Alibaba Cloud Certified Associate', issuer: 'Alibaba', image: '/images/Alibaba-Cloud-Certified-Associate.png' },
-  { name: 'Java Coding Bootcamp', issuer: 'YASKI', image: '/images/sertifikat-coding-programming-java-khanza-yaski-hospital-simrs.jpg' },
-  { name: 'User Interface Fundametals', issuer: 'Hacktiv8', image: '/images/sertifikat-ui-ux-design-frontend.jpg' },
+  { name: 'Mastering Mobile Programming Android', issuer: 'Skill Academy', image: '/images/sertifikat-programming-android-java.webp' },
+  { name: 'Alibaba Cloud Certified Associate', issuer: 'Alibaba', image: '/images/Alibaba-Cloud-Certified-Associate.webp' },
+  { name: 'Java Coding Bootcamp', issuer: 'YASKI', image: '/images/sertifikat-coding-programming-java-khanza-yaski-hospital-simrs.webp' },
+  { name: 'User Interface Fundametals', issuer: 'Hacktiv8', image: '/images/sertifikat-ui-ux-design-frontend.webp' },
 ]
 
 const socialLinks = [
@@ -26,7 +26,7 @@ export default function AboutSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="w-32 h-32 rounded-full border-2 border-gray-900 overflow-hidden mx-auto mb-2">
-            <Image src="/images/arwildo.jpeg" alt="Arwildo" width={150} height={150} className="object-cover" />
+            <Image src="/images/arwildo.webp" alt="Arwildo" width={150} height={150} className="object-cover" />
           </div>
           <h2 className="text-2xl font-bold text-center mb-4 text-gray-900">About</h2>
           <a href="/docs/arwldo_software_engineer_cv.pdf" download className="inline-block bg-gray-400 text-white text-sm py-1 px-2 rounded-xl hover:bg-gray-700 transition duration-300 ease-in-out mb-4">
