@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useCallback } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import { HiArrowSmallRight } from 'react-icons/hi2'
 import useEmblaCarousel from 'embla-carousel-react'
 
 const products = [
@@ -84,14 +85,14 @@ function ProductCard({ product }: { product: Product }) {
               onClick={scrollPrev}
               disabled={!prevBtnEnabled}
             >
-              <ChevronLeft className="w-4 h-4" />
+              <FaChevronLeft className="w-4 h-4" />
             </button>
             <button
               className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 text-blue-600 p-1 rounded-full transition duration-200 shadow-md"
               onClick={scrollNext}
               disabled={!nextBtnEnabled}
             >
-              <ChevronRight className="w-4 h-4" />
+              <FaChevronRight className="w-4 h-4" />
             </button>
           </>
         )}
@@ -100,7 +101,7 @@ function ProductCard({ product }: { product: Product }) {
         <h3 className="text-xl font-semibold mb-2 text-gray-900">{product.title}</h3>
         <p className="text-gray-600 mb-4">{product.description}</p>
         <a href={product.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-gray-400 hover:text-blue-700 transition duration-200">
-          Get <ArrowRight className="w-4 h-4 ml-2" />
+          Get <HiArrowSmallRight className="w-5 h-5 ml-1" />
         </a>
       </div>
     </div>

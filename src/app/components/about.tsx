@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Youtube, Github, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react'
+import { FaYoutube, FaGithub, FaLinkedin, FaXTwitter, FaFacebook, FaInstagram } from 'react-icons/fa6'
 
 const certificates = [
   { name: 'Mastering Mobile Programming Android', issuer: 'Skill Academy', image: '/images/sertifikat-programming-android-java.webp' },
@@ -9,12 +9,12 @@ const certificates = [
 ]
 
 const socialLinks = [
-  { name: 'Instagram', icon: <Instagram size={24} />, url: 'https://instagram.com/arwildoo' },
-  { name: 'YouTube', icon: <Youtube size={24} />, url: 'https://youtube.com/@arwildo' },
-  { name: 'GitHub', icon: <Github size={24} />, url: 'https://github.com/arwildo' },
-  { name: 'LinkedIn', icon: <Linkedin size={24} />, url: 'https://linkedin.com/in/arwildo' },
-  { name: 'Twitter', icon: <Twitter size={24} />, url: 'https://twitter.com/arwildo' },
-  { name: 'Facebook', icon: <Facebook size={24} />, url: 'https://facebook.com/profile.php?id=61563018308694' },
+  { name: 'Instagram', icon: <FaInstagram size={24} />, url: 'https://instagram.com/arwildoo' },
+  { name: 'YouTube', icon: <FaYoutube size={24} />, url: 'https://youtube.com/@arwildo' },
+  { name: 'GitHub', icon: <FaGithub size={24} />, url: 'https://github.com/arwildo' },
+  { name: 'LinkedIn', icon: <FaLinkedin size={24} />, url: 'https://linkedin.com/in/arwildo' },
+  { name: 'Twitter', icon: <FaXTwitter size={24} />, url: 'https://twitter.com/arwildo' },
+  { name: 'Facebook', icon: <FaFacebook size={24} />, url: 'https://facebook.com/profile.php?id=61563018308694' },
 ]
 
 export default function AboutSection() {
