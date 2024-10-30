@@ -85,7 +85,11 @@ const PageLoader = ({ onLoadComplete }: PageLoaderProps) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-white">
-      <Loader2 className="h-16 w-16 animate-spin text-blue-500" />
+      <img 
+        src="arwildo-software.webp" 
+        alt="Custom Khanza, Modifikasi Khanza, Programming, Coding, Java, Javascript, React, Tailwind" 
+        className="h-6 mx-6 my-4 animate-bounce"
+      />
     </div>
   );
 };

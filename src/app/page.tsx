@@ -6,7 +6,7 @@ import Customer from './components/customer'
 import About from './components/about'
 import FlyingNav from './components/flying-nav';
 import PageLoader from './components/PageLoader';
-import { Suspense, useState, useEffect } from 'react';
+import { Suspense, useState } from 'react';
 
 export default function Home() {
   const [isFullyLoaded, setIsFullyLoaded] = useState(false);
