@@ -72,10 +72,15 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        loading: {
+          '0%': { left: '-20%' },
+          '100%': { left: '100%' }
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "loading-bar": "loading 1.5s ease-in-out infinite",
       },
     },
   },

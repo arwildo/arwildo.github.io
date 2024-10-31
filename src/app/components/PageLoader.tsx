@@ -1,7 +1,5 @@
 'use client';
-
 import React, { useState, useEffect } from 'react';
-import { Loader2 } from 'lucide-react';
 
 interface PageLoaderProps {
   onLoadComplete: () => void;
@@ -9,7 +7,6 @@ interface PageLoaderProps {
 
 const PageLoader = ({ onLoadComplete }: PageLoaderProps) => {
   const [isLoading, setIsLoading] = useState(true);
-  const [progress, setProgress] = useState(0);
   const [sectionsLoaded, setSectionsLoaded] = useState({
     landing: false,
     products: false,
@@ -18,9 +15,6 @@ const PageLoader = ({ onLoadComplete }: PageLoaderProps) => {
   });
 
   useEffect(() => {
-    // Start with initial progress
-    setProgress(10);
-
     const checkReadyState = () => {
       if (document.readyState === 'complete') {
         handleFullLoad();
@@ -37,8 +31,7 @@ const PageLoader = ({ onLoadComplete }: PageLoaderProps) => {
           }));
         }
       });
-
-      setProgress(100);
+      
       setTimeout(() => {
         setIsLoading(false);
         onLoadComplete();
@@ -53,13 +46,6 @@ const PageLoader = ({ onLoadComplete }: PageLoaderProps) => {
               ...prev,
               [entry.target.id]: true
             }));
-
-            // Update progress as sections load
-            setProgress(prevProgress => {
-              const loadedSections = Object.values(sectionsLoaded).filter(Boolean).length;
-              const totalSections = Object.keys(sectionsLoaded).length;
-              return Math.min(90, (loadedSections / totalSections) * 100);
-            });
           }
         });
       },
@@ -85,7 +71,6 @@ const PageLoader = ({ onLoadComplete }: PageLoaderProps) => {
   useEffect(() => {
     const allSectionsLoaded = Object.values(sectionsLoaded).every(Boolean);
     if (allSectionsLoaded) {
-      setProgress(100);
       setTimeout(() => {
         setIsLoading(false);
         onLoadComplete();
@@ -98,14 +83,13 @@ const PageLoader = ({ onLoadComplete }: PageLoaderProps) => {
   return (
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-white">
       <img 
-        src="arwildo-software.webp" 
+        src="logo.webp" 
         alt="Custom Khanza, Modifikasi Khanza, Programming, Coding, Java, Javascript, React, Tailwind" 
-        className="h-6 mx-6 mb-4 animate-bounce"
+        className="h-9 mx-6 mb-4"
       />
-      <div className="w-36 h-1 bg-gray-100 rounded-full overflow-hidden">
+      <div className="w-36 h-1 bg-gray-100 rounded-full overflow-hidden relative">
         <div 
-          className="h-full bg-gray-300 transition-all duration-300 ease-out"
-          style={{ width: `${progress}%` }}
+          className="absolute h-full w-8 bg-blue-400 rounded-full animate-loading-bar"
         />
       </div>
     </div>
