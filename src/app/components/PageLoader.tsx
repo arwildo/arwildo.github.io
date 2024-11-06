@@ -10,8 +10,8 @@ const PageLoader = ({ onLoadComplete }: PageLoaderProps) => {
   const [sectionsLoaded, setSectionsLoaded] = useState({
     landing: false,
     products: false,
-    customer: false,
-    about: false,
+    customer: true,
+    about: true,
   });
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const PageLoader = ({ onLoadComplete }: PageLoaderProps) => {
     };
 
     const handleFullLoad = () => {
-      ['landing', 'products', 'customer', 'about'].forEach(id => {
+      ['landing', 'products'].forEach(id => {
         const element = document.getElementById(id);
         if (element) {
           setSectionsLoaded(prev => ({
