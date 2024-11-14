@@ -7,7 +7,7 @@ const FlyingNav = () => {
   
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['landing', 'products', 'customer', 'about'];
+      const sections = ['landing', 'products', 'services', 'customer', 'about'];
       const scrollPosition = window.scrollY;
       
       sections.forEach((section) => {
@@ -41,6 +41,7 @@ const FlyingNav = () => {
         {[
           { id: 'landing', label: 'Home' },
           { id: 'products', label: 'Products' },
+          { id: 'services', label: 'Services' },
           { id: 'customer', label: 'Customers' },
           { id: 'about', label: 'About' }
         ].map(({ id, label }) => (

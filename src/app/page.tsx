@@ -2,6 +2,7 @@
 
 import LandingPage from './components/landing-page'
 import ProductsSection from './components/products-section';
+import ServiceSection from './components/services';
 import Customer from './components/customer'
 import About from './components/about'
 import FlyingNav from './components/flying-nav';
@@ -31,6 +32,11 @@ export default function Home() {
         <Suspense fallback={<div className="h-screen" />}>
           <section id="products">
             <ProductsSection />
+          </section>
+        </Suspense>
+        <Suspense fallback={<div className="h-screen" />}>
+          <section id="services">
+            <ServiceSection />
           </section>
         </Suspense>
         <Suspense fallback={<div className="h-screen" />}>
