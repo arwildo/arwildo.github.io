@@ -2,11 +2,20 @@
 import { motion } from 'framer-motion';
 import { Laptop, PanelTop, PencilRuler, Cross, Youtube, GalleryHorizontalEnd } from 'lucide-react';
 
+const gradients = [
+  'linear-gradient(135deg, #9F7AEA, #60A5FA)',
+  'linear-gradient(135deg, #6EE7B7, #34D399)',
+  'linear-gradient(135deg, #FCD34D, #FBBF24)',
+  'linear-gradient(135deg, #FCA5A5, #F87171)',
+  'linear-gradient(135deg, #93C5FD, #60A5FA)',
+  'linear-gradient(135deg, #C4B5FD, #A78BFA)',
+];
+
 const features = [
   {
     title: 'Software Development',
     description: 'Develop scalable applications using modern tech stack, delivering reliable solutions for complex business needs.',
-    icon: Laptop 
+    icon: Laptop
   },
   {
     title: 'Web Development',
@@ -40,7 +49,7 @@ const ServiceSection = () => {
     <div className="bg-white py-24 px-6 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -57,7 +66,7 @@ const ServiceSection = () => {
             The best solutions for your business, brand, clinic, or hospital.
           </motion.p>
         </div>
-        
+
         <div className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
             <motion.div
@@ -68,11 +77,21 @@ const ServiceSection = () => {
               className="relative flex items-start space-x-4 bg-white p-8 rounded-2xl hover:bg-gray-100 transition-colors shadow-sm"
             >
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
-                  <feature.icon className="w-6 h-6 text-gray-600" />
+                <div
+                  className="w-12 h-12 rounded-full flex items-center justify-center transition-all"
+                  style={{
+                    background: gradients[index % gradients.length], // Cycle through the gradients array
+                    border: '2px solid transparent',
+                    backgroundOrigin: 'border-box',
+                    boxShadow: '0px 0px 6px rgba(0, 0, 0, 0.2)',
+                  }}
+                >
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center transition-all bg-gray-100 hover:bg-opacity-80">
+                    <feature.icon className="w-6 h-6 text-gray-600 transition-colors duration-300 hover:text-white" />
+                  </div>
                 </div>
               </div>
-              
+
               <div className="flex-grow">
                 <h3 className="text-xl font-semibold text-gray-900">
                   {feature.title}

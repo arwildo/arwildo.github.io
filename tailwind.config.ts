@@ -24,6 +24,7 @@ const config = {
       colors: {
         madewhite: "#FEFBF9",
         carcoal: "#37313C",
+        bluegray: "#8a93b5",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
