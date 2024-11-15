@@ -74,7 +74,7 @@ const ServiceSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative flex items-start space-x-4 bg-white p-8 rounded-2xl hover:bg-gray-100 transition-colors shadow-sm"
+              className="relative flex items-start space-x-4 bg-white p-8 rounded-2xl hover:shadow-sm border hover:border-gray-200"
             >
               <div className="flex-shrink-0">
                 <div
@@ -86,8 +86,8 @@ const ServiceSection = () => {
                     boxShadow: '0px 0px 6px rgba(0, 0, 0, 0.2)',
                   }}
                 >
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center transition-all bg-gray-100 hover:bg-opacity-80">
-                    <feature.icon className="w-6 h-6 text-gray-600 transition-colors duration-300 hover:text-white" />
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center transition-all bg-opacity-100 bg-gray-100 hover:bg-opacity-0">
+                    <feature.icon className="w-6 h-6 text-carcoal transition-colors duration-300" />
                   </div>
                 </div>
               </div>
