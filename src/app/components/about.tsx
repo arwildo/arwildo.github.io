@@ -29,7 +29,7 @@ export default function AboutSection() {
             <Image src="/images/arwildo.webp" alt="Arwildo" width={150} height={150} className="object-cover" />
           </div>
           <h2 className="text-2xl font-bold text-center mb-4 text-gray-900">About</h2>
-          <a href="/docs/arwldo_software_engineer_resume.pdf" download className="inline-block bg-gray-400 text-white text-sm py-1 px-2 rounded-xl hover:bg-gray-700 transition duration-300 ease-in-out mb-4">
+          <a href="/docs/arwldo_software_engineer.pdf" download className="inline-block bg-gray-400 text-white text-sm py-1 px-2 rounded-xl hover:bg-gray-700 transition duration-300 ease-in-out mb-4">
             <div className="flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
