@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 import { Laptop, PanelTop, PencilRuler, Cross, Youtube, GalleryHorizontalEnd } from 'lucide-react';
 
 const gradients = [
-  'linear-gradient(135deg, #9F7AEA, #60A5FA)',
-  'linear-gradient(135deg, #6EE7B7, #34D399)',
-  'linear-gradient(135deg, #FCD34D, #FBBF24)',
-  'linear-gradient(135deg, #FCA5A5, #F87171)',
-  'linear-gradient(135deg, #93C5FD, #60A5FA)',
-  'linear-gradient(135deg, #C4B5FD, #A78BFA)',
+  'linear-gradient(400deg, #9F7AEA, #60A5FA)',
+  'linear-gradient(400deg, #6EE7B7, #34D399)',
+  'linear-gradient(400deg, #FCD34D, #FBBF24)',
+  'linear-gradient(400deg, #FCA5A5, #F87171)',
+  'linear-gradient(400deg, #93C5FD, #60A5FA)',
+  'linear-gradient(400deg, #C4B5FD, #A78BFA)',
 ];
 
 const features = [
