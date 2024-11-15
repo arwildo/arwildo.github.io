@@ -46,7 +46,7 @@ const features = [
 
 const ServiceSection = () => {
   return (
-    <div className="bg-white py-24 px-6 sm:py-32 lg:px-8">
+    <div className="bg-white py-8 px-6 sm:py-8 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
           <motion.h2

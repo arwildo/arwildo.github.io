@@ -32,16 +32,12 @@ export default function Home() {
         <Suspense fallback={<div className="h-screen" />}>
           <section id="products">
             <ProductsSection />
+            <Customer />
           </section>
         </Suspense>
         <Suspense fallback={<div className="h-screen" />}>
           <section id="services">
             <ServiceSection />
-          </section>
-        </Suspense>
-        <Suspense fallback={<div className="h-screen" />}>
-          <section id="customer">
-            <Customer />
           </section>
         </Suspense>
         <Suspense fallback={<div className="h-screen" />}>
