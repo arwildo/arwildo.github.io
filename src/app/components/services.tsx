@@ -1,14 +1,10 @@
 'use client';
 import { motion } from 'framer-motion';
 import { Laptop, PanelTop, PencilRuler, Cross, Youtube, GalleryHorizontalEnd } from 'lucide-react';
+import { useEffect, useRef } from 'react';
 
 const gradients = [
-  'linear-gradient(400deg, #9F7AEA, #60A5FA)',
-  'linear-gradient(400deg, #6EE7B7, #34D399)',
-  'linear-gradient(400deg, #FCD34D, #FBBF24)',
-  'linear-gradient(400deg, #FCA5A5, #F87171)',
   'linear-gradient(400deg, #93C5FD, #60A5FA)',
-  'linear-gradient(400deg, #C4B5FD, #A78BFA)',
 ];
 
 const features = [
@@ -45,8 +41,116 @@ const features = [
 ];
 
 const ServiceSection = () => {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const cursorRef = useRef<HTMLDivElement>(null);
+  const cursorDotRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    let cursor = cursorRef.current;
+    let cursorDot = cursorDotRef.current;
+    let section = sectionRef.current;
+    
+    if (!cursor || !section || !cursorDot) return;
+
+    let cursorVisible = false;
+    let cursorScale = 1;
+    let mouseX = 0;
+    let mouseY = 0;
+    let dotX = 0;
+    let dotY = 0;
+    let currentScale = 1;
+
+    const updateProperties = (elem: HTMLElement, x: number, y: number, scale: number) => {
+      elem.style.transform = `translate3d(${x}px, ${y}px, 0) scale(${scale})`;
+    };
+
+    const updateCursor = () => {
+      if (!cursorVisible) {
+        cursor!.style.display = 'none';
+        cursorDot!.style.display = 'none';
+        return;
+      }
+      cursor!.style.display = 'block';
+      cursorDot!.style.display = 'block';
+
+      // Smooth dot movement
+      dotX += (mouseX - dotX) * 0.2;
+      dotY += (mouseY - dotY) * 0.2;
+      updateProperties(cursorDot!, dotX, dotY, 1);
+
+      // Smooth cursor movement
+      const x = mouseX;
+      const y = mouseY;
+      currentScale += (cursorScale - currentScale) * 0.2;
+      updateProperties(cursor!, x, y, currentScale);
+    };
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const rect = section!.getBoundingClientRect();
+      cursorVisible = 
+        e.clientX >= rect.left &&
+        e.clientX <= rect.right &&
+        e.clientY >= rect.top &&
+        e.clientY <= rect.bottom;
+
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    };
+
+    const handleMouseEnter = () => {
+      cursorScale = 2;
+    };
+
+    const handleMouseLeave = () => {
+      cursorScale = 1;
+    };
+
+    // Add event listeners
+    window.addEventListener('mousemove', handleMouseMove);
+    const cards = section.querySelectorAll('.service-card');
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', handleMouseEnter);
+      card.addEventListener('mouseleave', handleMouseLeave);
+    });
+
+    // Animation loop
+    const render = () => {
+      updateCursor();
+      requestAnimationFrame(render);
+    };
+    requestAnimationFrame(render);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      cards.forEach(card => {
+        card.removeEventListener('mouseenter', handleMouseEnter);
+        card.removeEventListener('mouseleave', handleMouseLeave);
+      });
+    };
+  }, []);
+
   return (
-    <div className="bg-white py-8 px-6 sm:py-8 lg:px-8">
+    <div ref={sectionRef} className="bg-white py-8 px-6 sm:py-8 lg:px-8 relative cursor-none overflow-hidden">
+      {/* Custom Cursor */}
+      <div 
+        ref={cursorRef}
+        className="fixed top-0 left-0 pointer-events-none z-50 w-8 h-8 -ml-4 -mt-4"
+        style={{ display: 'none' }}
+      >
+        <div className="relative w-full h-full">
+          <div className="absolute inset-0 rounded-full border border-blue-500 opacity-25" />
+        </div>
+      </div>
+      <div 
+        ref={cursorDotRef}
+        className="fixed top-0 left-0 pointer-events-none z-50 w-4 h-4 -ml-2 -mt-2"
+        style={{ display: 'none' }}
+      >
+        <div className="relative w-full h-full">
+          <div className="absolute inset-0 rounded-full border border-blue-500" />
+        </div>
+      </div>
+
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
           <motion.h2
@@ -74,20 +178,20 @@ const ServiceSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative flex items-start space-x-4 bg-white p-8 rounded-2xl hover:shadow-sm border hover:border-gray-200"
+              className="service-card relative flex items-start space-x-4 bg-white hover:bg-blue-50 p-8 rounded-2xl hover:border hover:border-gray-200 transition-colors duration-500"
             >
               <div className="flex-shrink-0">
                 <div
                   className="w-12 h-12 rounded-full flex items-center justify-center transition-all"
                   style={{
-                    background: gradients[index % gradients.length], // Cycle through the gradients array
+                    background: gradients[index % gradients.length],
                     border: '2px solid transparent',
                     backgroundOrigin: 'border-box',
                     boxShadow: '0px 0px 6px rgba(0, 0, 0, 0.2)',
                   }}
                 >
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center transition-all bg-opacity-100 bg-gray-100 hover:bg-opacity-0">
-                    <feature.icon className="w-6 h-6 text-carcoal transition-colors duration-300" />
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center transition-all bg-opacity-100 bg-gray-100 hover:bg-opacity-0 text-gray-800 hover:text-white transition-colors duration-300">
+                    <feature.icon className="w-6 h-6" />
                   </div>
                 </div>
               </div>
