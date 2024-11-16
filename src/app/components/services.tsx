@@ -43,21 +43,17 @@ const features = [
 const ServiceSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const cursorRef = useRef<HTMLDivElement>(null);
-  const cursorDotRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     let cursor = cursorRef.current;
-    let cursorDot = cursorDotRef.current;
     let section = sectionRef.current;
-    
-    if (!cursor || !section || !cursorDot) return;
+
+    if (!cursor || !section) return;
 
     let cursorVisible = false;
     let cursorScale = 1;
     let mouseX = 0;
     let mouseY = 0;
-    let dotX = 0;
-    let dotY = 0;
     let currentScale = 1;
 
     const updateProperties = (elem: HTMLElement, x: number, y: number, scale: number) => {
@@ -66,28 +62,21 @@ const ServiceSection = () => {
 
     const updateCursor = () => {
       if (!cursorVisible) {
-        cursor!.style.display = 'none';
-        cursorDot!.style.display = 'none';
+        cursor.style.display = 'none';
         return;
       }
-      cursor!.style.display = 'block';
-      cursorDot!.style.display = 'block';
-
-      // Smooth dot movement
-      dotX += (mouseX - dotX) * 0.2;
-      dotY += (mouseY - dotY) * 0.2;
-      updateProperties(cursorDot!, dotX, dotY, 1);
+      cursor.style.display = 'block';
 
       // Smooth cursor movement
       const x = mouseX;
       const y = mouseY;
       currentScale += (cursorScale - currentScale) * 0.2;
-      updateProperties(cursor!, x, y, currentScale);
+      updateProperties(cursor, x, y, currentScale);
     };
 
     const handleMouseMove = (e: MouseEvent) => {
-      const rect = section!.getBoundingClientRect();
-      cursorVisible = 
+      const rect = section.getBoundingClientRect();
+      cursorVisible =
         e.clientX >= rect.left &&
         e.clientX <= rect.right &&
         e.clientY >= rect.top &&
@@ -132,18 +121,9 @@ const ServiceSection = () => {
   return (
     <div ref={sectionRef} className="bg-white py-8 px-6 sm:py-8 lg:px-8 relative cursor-none overflow-hidden">
       {/* Custom Cursor */}
-      <div 
+      <div
         ref={cursorRef}
         className="fixed top-0 left-0 pointer-events-none z-50 w-8 h-8 -ml-4 -mt-4"
-        style={{ display: 'none' }}
-      >
-        <div className="relative w-full h-full">
-          <div className="absolute inset-0 rounded-full border border-blue-500 opacity-25" />
-        </div>
-      </div>
-      <div 
-        ref={cursorDotRef}
-        className="fixed top-0 left-0 pointer-events-none z-50 w-4 h-4 -ml-2 -mt-2"
         style={{ display: 'none' }}
       >
         <div className="relative w-full h-full">
@@ -178,7 +158,7 @@ const ServiceSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="service-card relative flex items-start space-x-4 bg-white hover:bg-blue-50 p-8 rounded-2xl hover:border hover:border-gray-200 transition-colors duration-500"
+              className="service-card relative flex items-start space-x-4 bg-white hover:bg-blue-100 p-8 rounded-2xl border hover:border-gray-200 transition-colors duration-500"
             >
               <div className="flex-shrink-0">
                 <div
