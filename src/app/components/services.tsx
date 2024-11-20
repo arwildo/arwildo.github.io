@@ -1,136 +1,53 @@
 'use client';
 import { motion } from 'framer-motion';
 import { Laptop, PanelTop, PencilRuler, Cross, Youtube, GalleryHorizontalEnd } from 'lucide-react';
-import { useEffect, useRef } from 'react';
 
 const gradients = [
-  'linear-gradient(400deg, #93C5FD, #60A5FA)',
+  'linear-gradient(400deg, #9F7AEA, #60A5FA)',
 ];
 
 const features = [
   {
     title: 'Software Development',
     description: 'Develop scalable applications using modern tech stack, delivering reliable solutions for complex business needs.',
-    icon: Laptop
+    icon: Laptop,
+    image: '/images/photos/software-development.webp'
   },
   {
     title: 'Web Development',
     description: 'Build responsive web applications, driving measurable business growth and user engagement.',
-    icon: PanelTop
+    icon: PanelTop,
+    image: '/images/photos/web-mobile-android-development.webp'
   },
   {
     title: 'Customize Application',
     description: 'Create tailored software solutions based on your specific requirements and business objectives.',
-    icon: PencilRuler
+    icon: PencilRuler,
+    image: '/images/photos/customize-software-development.webp'
   },
   {
     title: 'Error Fix',
     description: 'Quickly identify and resolve software issues while implementing preventive measures for future stability.',
-    icon: Cross
+    icon: Cross,
+    image: '/images/photos/fix-error-application-software.webp'
   },
   {
     title: 'Video Promotion',
     description: 'Promote your product through my social media with 100k+ followers total, reaching targeted audiences.',
-    icon: Youtube
+    icon: Youtube,
+    image: '/images/photos/promote-video-campaign-youtube-tiktok-facebook-instagram.webp'
   },
   {
     title: 'Post / Story Promotion',
     description: 'Boost your brand visibility through strategic social media content across multiple platforms.',
-    icon: GalleryHorizontalEnd
+    icon: GalleryHorizontalEnd,
+    image: '/images/photos/promote-post-story-instagram.webp'
   }
 ];
 
 const ServiceSection = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const cursorRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    let cursor = cursorRef.current;
-    let section = sectionRef.current;
-
-    if (!cursor || !section) return;
-
-    let cursorVisible = false;
-    let cursorScale = 1;
-    let mouseX = 0;
-    let mouseY = 0;
-    let currentScale = 1;
-
-    const updateProperties = (elem: HTMLElement, x: number, y: number, scale: number) => {
-      elem.style.transform = `translate3d(${x}px, ${y}px, 0) scale(${scale})`;
-    };
-
-    const updateCursor = () => {
-      if (!cursorVisible) {
-        cursor.style.display = 'none';
-        return;
-      }
-      cursor.style.display = 'block';
-
-      // Smooth cursor movement
-      const x = mouseX;
-      const y = mouseY;
-      currentScale += (cursorScale - currentScale) * 0.2;
-      updateProperties(cursor, x, y, currentScale);
-    };
-
-    const handleMouseMove = (e: MouseEvent) => {
-      const rect = section.getBoundingClientRect();
-      cursorVisible =
-        e.clientX >= rect.left &&
-        e.clientX <= rect.right &&
-        e.clientY >= rect.top &&
-        e.clientY <= rect.bottom;
-
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-    };
-
-    const handleMouseEnter = () => {
-      cursorScale = 2;
-    };
-
-    const handleMouseLeave = () => {
-      cursorScale = 1;
-    };
-
-    // Add event listeners
-    window.addEventListener('mousemove', handleMouseMove);
-    const cards = section.querySelectorAll('.service-card');
-    cards.forEach(card => {
-      card.addEventListener('mouseenter', handleMouseEnter);
-      card.addEventListener('mouseleave', handleMouseLeave);
-    });
-
-    // Animation loop
-    const render = () => {
-      updateCursor();
-      requestAnimationFrame(render);
-    };
-    requestAnimationFrame(render);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      cards.forEach(card => {
-        card.removeEventListener('mouseenter', handleMouseEnter);
-        card.removeEventListener('mouseleave', handleMouseLeave);
-      });
-    };
-  }, []);
-
   return (
-    <div ref={sectionRef} className="bg-white py-8 px-6 sm:py-8 lg:px-8 relative cursor-none overflow-hidden">
-      {/* Custom Cursor */}
-      <div
-        ref={cursorRef}
-        className="fixed top-0 left-0 pointer-events-none z-50 w-8 h-8 -ml-4 -mt-4"
-        style={{ display: 'none' }}
-      >
-        <div className="relative w-full h-full">
-          <div className="absolute inset-0 rounded-full border border-blue-500" />
-        </div>
-      </div>
-
+    <div className="bg-white py-8 px-6 sm:py-8 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
           <motion.h2
@@ -157,10 +74,10 @@ const ServiceSection = () => {
               key={feature.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="service-card relative flex items-start space-x-4 bg-white hover:bg-blue-100 p-8 rounded-2xl border hover:border-gray-200 transition-colors duration-500"
+              whileHover={{ scale: 1.1 }} 
+              className="group relative flex items-start space-x-4 bg-white p-8 rounded-2xl hover:shadow-sm border hover:border-gray-200 overflow-hidden min-h-[200px]"
             >
-              <div className="flex-shrink-0">
+              <div className="relative z-10 flex-shrink-0">
                 <div
                   className="w-12 h-12 rounded-full flex items-center justify-center transition-all"
                   style={{
@@ -170,19 +87,38 @@ const ServiceSection = () => {
                     boxShadow: '0px 0px 6px rgba(0, 0, 0, 0.2)',
                   }}
                 >
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center transition-all bg-opacity-100 bg-gray-100 hover:bg-opacity-0 text-gray-800 hover:text-white transition-colors duration-300">
-                    <feature.icon className="w-6 h-6" />
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center transition-all bg-opacity-100 bg-gray-100 hover:bg-opacity-0">
+                    <feature.icon className="w-6 h-6 text-carcoal transition-colors duration-300" />
                   </div>
                 </div>
               </div>
 
-              <div className="flex-grow">
+              <div className="relative z-10 flex-grow">
                 <h3 className="text-xl font-semibold text-gray-900">
                   {feature.title}
                 </h3>
                 <p className="mt-4 text-gray-600">
                   {feature.description}
                 </p>
+              </div>
+
+              {/* Hover Image with Corner Gradients */}
+              <div 
+                className="absolute bottom-0 right-0 w-48 h-36 pointer-events-none transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
+              >
+                <div 
+                  className="absolute inset-0"
+                  style={{
+                    maskImage: `radial-gradient(circle at center, black 20%, transparent 85%)`,
+                    WebkitMaskImage: `radial-gradient(circle at center, black 20%, transparent 85%)`
+                  }}
+                >
+                  <img
+                    src={feature.image}
+                    alt={feature.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </motion.div>
           ))}
