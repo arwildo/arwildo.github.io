@@ -2,10 +2,6 @@
 import { motion } from 'framer-motion';
 import { Laptop, PanelTop, PencilRuler, Cross, Youtube, GalleryHorizontalEnd } from 'lucide-react';
 
-const gradients = [
-  'linear-gradient(400deg, #9F7AEA, #60A5FA)',
-];
-
 const features = [
   {
     title: 'Software Development',
@@ -80,14 +76,8 @@ const ServiceSection = () => {
               <div className="relative z-10 flex-shrink-0">
                 <div
                   className="w-12 h-12 rounded-full flex items-center justify-center transition-all"
-                  style={{
-                    background: gradients[index % gradients.length],
-                    border: '2px solid transparent',
-                    backgroundOrigin: 'border-box',
-                    boxShadow: '0px 0px 6px rgba(0, 0, 0, 0.2)',
-                  }}
                 >
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center transition-all bg-opacity-100 bg-gray-100 hover:bg-opacity-0">
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center transition-all bg-gray-100">
                     <feature.icon className="w-6 h-6 text-carcoal transition-colors duration-300" />
                   </div>
                 </div>
@@ -97,7 +87,7 @@ const ServiceSection = () => {
                 <h3 className="text-xl font-semibold text-gray-900">
                   {feature.title}
                 </h3>
-                <p className="mt-4 text-gray-600">
+                <p className="mt-4 text-gray-600 hover:opacity-0 transition duration-500">
                   {feature.description}
                 </p>
               </div>
