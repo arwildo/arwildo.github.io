@@ -37,6 +37,12 @@ const products = [
     images: ['/images/projects/tradetul.webp'],
     link: 'https://arwildo.com/tradetul',
   },
+  {
+    title: 'Custom Khanza',
+    description: 'Custom Healthcare Software Solutions: Trusted by Medical Institutions Across Indonesia. Build with Java, PHP, SQL.',
+    images: ['/images/projects/jasa-modifikasi-custom-simrs-khanza-simkes-erm.webp'],
+    link: 'https://youtube.com/@arwildo',
+  },
 ]
 
 interface Product {
