@@ -51,9 +51,14 @@ export default function LandingPage() {
           className="absolute top-0 right-0 h-auto md:w-1/2 overflow-visible"
         >
           <img 
+            src="images/blueprint-grids.svg" 
+            alt="Grid Blueprint" 
+            className="absolute top-0 right-0 w-auto h-auto opacity-70"
+          />
+          <img 
             src="images/fly-objects.webp" 
             alt="Background" 
-            className="w-full h-full object-cover object-center"
+            className="absolute top-0 right-0 w-auto h-auto"
           />
         </motion.div>
 
