@@ -48,7 +48,7 @@ export default function AboutSection() {
             {certificates.map((cert) => (
               <div 
                 key={cert.name}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
+                className="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition duration-300 ease-in-out"
               >
                 <Image src={cert.image} alt={cert.name} width={300} height={250} className="w-full h-30 object-cover" />
                 <div className="p-4">
