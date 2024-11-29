@@ -44,13 +44,18 @@ export default function LandingPage() {
     <div className="font-avenir">
       <div className="relative min-h-screen">
         {/* Background Image */}
-        <div className="absolute top-0 right-0 h-auto md:w-1/2 overflow-visible">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="absolute top-0 right-0 h-auto md:w-1/2 overflow-visible"
+        >
           <img 
             src="images/fly-objects.webp" 
             alt="Background" 
             className="w-full h-full object-cover object-center"
           />
-        </div>
+        </motion.div>
 
         {/* Header */}
         <header className="relative z-10">
@@ -64,31 +69,51 @@ export default function LandingPage() {
         </header>
 
         {/* Main Content */}
-        <section className="relative z-10 flex min-h-screen">
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="relative z-10 flex min-h-screen"
+        >
           <div className="w-full md:w-1/2 flex items-center justify-center">
             <div className="px-4">
               <motion.div 
                 className="text-center md:text-left"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
               >
-                <h1 className="text-5xl md:text-7xl font-black text-carcoal">
+                <motion.h1 
+                  className="text-5xl md:text-7xl font-black text-carcoal"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.6 }}
+                >
                   Arwildo
-                </h1>
-                <div className="text-md text-gray-600 font-normal tracking-widest h-6 flex items-center justify-center md:justify-start">
+                </motion.h1>
+                <motion.div
+                  className="text-md text-gray-600 font-normal tracking-widest h-6 flex items-center justify-center md:justify-start"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.8 }}
+                >
                   <span>{displayedText}</span>
                   <span className="w-1 h-5 bg-gray-600 ml-1 animate-ping"></span>
-                </div>
+                </motion.div>
               </motion.div>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Blinking Scroll Indicator */}
-        <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 1 }}
+          className="fixed bottom-10 left-1/2 transform -translate-x-1/2"
+        >
           <div className="w-0.5 h-7 bg-carcoal animate-bounce rounded-full"></div>
-        </div>
+        </motion.div>
 
       </div>
     </div>
