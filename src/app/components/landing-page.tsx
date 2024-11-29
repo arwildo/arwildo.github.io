@@ -48,7 +48,7 @@ export default function LandingPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="absolute top-0 right-0 h-auto md:w-1/2 overflow-visible"
+          className="absolute top-0 right-0 h-auto w-full md:w-1/2 overflow-visible"
         >
           <img 
             src="images/blueprint-grids.svg" 
