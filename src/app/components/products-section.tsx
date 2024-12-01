@@ -118,7 +118,7 @@ export default function ProductsSection() {
   return (
     <section className="bg-white text-gray-900 py-18 relative">
       <div className="container mx-auto px-8 md:px-12 relative z-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {products.map((product, index) => (
             <motion.div
               key={product.title}
