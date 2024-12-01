@@ -44,7 +44,7 @@ export default function AboutSection() {
         </div>
 
         <div className="mb-16">
-          <div className="grid grid-cols-2 px-4 md:px-8 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 px-4 md:px-8 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
             {certificates.map((cert) => (
               <div 
                 key={cert.name}

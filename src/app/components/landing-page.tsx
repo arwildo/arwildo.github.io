@@ -53,7 +53,7 @@ export default function LandingPage() {
           <img 
             src="images/blueprint-grids.svg" 
             alt="Grid Blueprint" 
-            className="absolute top-0 right-0 w-auto h-auto opacity-70"
+            className="absolute top-0 right-0 w-auto h-auto opacity-90"
           />
           <img 
             src="images/fly-objects.webp" 
