@@ -8,6 +8,12 @@ import useEmblaCarousel from 'embla-carousel-react'
 
 const products = [
   {
+    title: 'Custom Khanza',
+    description: 'Custom Healthcare Software Solutions: Trusted by Medical Institutions Across Indonesia. Build with Java, PHP, SQL.',
+    images: ['/images/projects/jasa-modifikasi-custom-simrs-khanza-simkes-erm.webp'],
+    link: 'https://arwildo.com/custom-khanza',
+  },
+  {
     title: 'Akunter',
     description: 'Full-stack DRRM (Django, React, Redux, MySQL) application to handle accounting and databases of small businesses.',
     images: ['/images/projects/akunter.webp'],
@@ -36,12 +42,6 @@ const products = [
     description: 'Web App for Calculate Risk Reward when Trading. Build for Cypto Company with React and Tailwind.',
     images: ['/images/projects/tradetul.webp'],
     link: 'https://arwildo.com/tradetul',
-  },
-  {
-    title: 'Custom Khanza',
-    description: 'Custom Healthcare Software Solutions: Trusted by Medical Institutions Across Indonesia. Build with Java, PHP, SQL.',
-    images: ['/images/projects/jasa-modifikasi-custom-simrs-khanza-simkes-erm.webp'],
-    link: 'https://youtube.com/@arwildo',
   },
 ]
 
