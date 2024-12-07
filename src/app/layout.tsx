@@ -16,6 +16,7 @@ export default function RootLayout({
         <meta property="og:image" content="/images/logo.webp" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://arwildo.com/" />
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="0c641c91-29c8-40df-8aad-014c850d0743"></script>
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body>{children}</body>
