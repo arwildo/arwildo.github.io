@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { motion } from 'framer-motion'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
-import { HiArrowSmallRight } from 'react-icons/hi2'
+import { HiArrowSmallRight, HiArrowSmallDown } from 'react-icons/hi2'
 import useEmblaCarousel from 'embla-carousel-react'
 
 const products = [
@@ -42,6 +42,12 @@ const products = [
     description: 'Web App for Calculate Risk Reward when Trading. Build for Cypto Company with React and Tailwind.',
     images: ['/images/projects/tradetul.webp'],
     link: 'https://arwildo.com/tradetul',
+  },
+  {
+    title: 'Unfollower',
+    description: 'Discover who doesn’t follow you back and who has unfollowed you on Instagram. Built with Next.js and Tailwind CSS.',
+    images: ['/images/projects/view-instagram-unfollower.webp'],
+    link: 'https://arwildo.com/unfollower',
   },
 ]
 
@@ -115,11 +121,16 @@ function ProductCard({ product }: { product: Product }) {
 }
 
 export default function ProductsSection() {
+  const [visibleProducts, setVisibleProducts] = useState(6);
+  const loadMoreProducts = () => {
+    setVisibleProducts((prev) => Math.min(prev + 6, products.length));
+  };
+
   return (
     <section className="bg-white text-gray-900 py-18 relative">
       <div className="container mx-auto px-8 md:px-12 relative z-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {products.map((product, index) => (
+          {products.slice(0, visibleProducts).map((product, index) => (
             <motion.div
               key={product.title}
               initial={{ opacity: 0, y: 20 }}
@@ -130,7 +141,20 @@ export default function ProductsSection() {
             </motion.div>
           ))}
         </div>
+
+        {visibleProducts < products.length && (
+          <div
+            className="flex justify-center items-center mt-8" // Added items-center
+          >
+            <button
+              onClick={loadMoreProducts}
+              className="bg-white text-black px-6 py-2 rounded-full hover:bg-blue-500 hover:text-white transition duration-300 flex items-center border"
+            >
+              Load More <HiArrowSmallDown className="w-5 h-5 ml-1" />
+            </button>
+          </div>
+        )}
       </div>
     </section>
-  )
+  );
 }
