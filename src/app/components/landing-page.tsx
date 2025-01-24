@@ -44,23 +44,24 @@ export default function LandingPage() {
     <div className="font-avenir">
       <div className="relative min-h-screen">
         {/* Background Image */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="absolute top-0 right-0 h-auto w-full md:w-1/2 overflow-visible"
-        >
+        <div className="absolute top-0 right-0 h-auto w-full md:w-1/2 overflow-visible">
           <img 
             src="images/blueprint-grids.svg" 
             alt="Grid Blueprint" 
             className="absolute top-0 right-0 w-auto h-auto opacity-90"
           />
-          <img 
-            src="images/fly-objects.webp" 
-            alt="Background" 
-            className="absolute top-0 right-0 w-auto h-auto"
-          />
-        </motion.div>
+         <motion.div
+           initial={{ opacity: 0, y: 50 }}
+           animate={{ opacity: 1, y: 0 }}
+           transition={{ duration: 1 }}
+         >
+           <img 
+             src="images/fly-objects.webp" 
+             alt="Background" 
+             className="absolute top-0 right-0 w-auto h-auto"
+           />
+         </motion.div>
+        </div>
 
         {/* Header */}
         <header className="relative z-10">
