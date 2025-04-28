@@ -46,7 +46,7 @@ export default function AboutSection() {
         <div className="mb-16">
           <div className="grid grid-cols-2 px-4 md:px-8 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
             {certificates.map((cert) => (
-              <div 
+              <div
                 key={cert.name}
                 className="bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 transition duration-300 ease-in-out"
               >
@@ -63,7 +63,7 @@ export default function AboutSection() {
         <footer className="pt-8">
           <div className="flex flex-wrap justify-center items-center gap-6">
             {socialLinks.map((link) => (
-              <a 
+              <a
                 key={link.name}
                 href={link.url}
                 target="_blank"
@@ -76,7 +76,7 @@ export default function AboutSection() {
             ))}
           </div>
           <div className="text-center mt-8 text-gray-500">
-            <p>&copy; 2024 Arwildo</p>
+            <p>&copy; 2019 - {new Date().getFullYear()} Arwildo</p>
           </div>
         </footer>
       </div>
