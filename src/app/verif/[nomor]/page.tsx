@@ -1,4 +1,3 @@
-import { notFound } from 'next/navigation';
 import documents from '@/data/db_document.json';
 import VerifClient from '@/app/verif/[nomor]/verif-client';
 
@@ -14,9 +13,5 @@ export async function generateMetadata({ params }: { params: { nomor: string } }
 export default function VerifPage({ params }: { params: { nomor: string } }) {
   const document = documents.find((doc) => doc.nomor === params.nomor);
 
-  if (!document) {
-    notFound();
-  }
-
-  return <VerifClient nomor={document.nomor} ket={document.ket} />;
+  return <VerifClient nomor={params.nomor} ket={document?.ket} />;
 }
